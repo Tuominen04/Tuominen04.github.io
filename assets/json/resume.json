@@ -46,61 +46,31 @@
       "name": ".NET Backend Development",
       "level": "Advanced",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "C#",
-        ".NET Framework",
-        "REST API Design",
-        "API Maintenance",
-        "Backend Architecture"
-      ]
+      "keywords": ["C#", ".NET Framework", "REST API Design", "API Maintenance", "Backend Architecture"]
     },
     {
       "name": "API Testing & QA",
       "level": "Advanced",
       "icon": "fa-solid fa-vial",
-      "keywords": [
-        "Postman",
-        "Access Control Testing",
-        "Test Automation",
-        "Debugging",
-        "Issue Resolution"
-      ]
+      "keywords": ["Postman", "Access Control Testing", "Test Automation", "Debugging", "Issue Resolution"]
     },
     {
       "name": "Full-Stack Development",
       "level": "Intermediate",
       "icon": "fa-solid fa-layer-group",
-      "keywords": [
-        "TypeScript",
-        "React",
-        "Frontend Feature Development",
-        "Agile Collaboration"
-      ]
+      "keywords": ["TypeScript", "React", "Frontend Feature Development", "Agile Collaboration"]
     },
     {
       "name": "IoT & Embedded Systems",
       "level": "Intermediate",
       "icon": "fa-solid fa-microchip",
-      "keywords": [
-        "ESP32",
-        "C",
-        "ESP-IDF",
-        "BLE Setup",
-        "HTTP Communication",
-        "NVS Storage",
-        "OTA Updates"
-      ]
+      "keywords": ["ESP32", "C", "ESP-IDF", "BLE Setup", "HTTP Communication", "NVS Storage", "OTA Updates"]
     },
     {
       "name": "Collaboration & Agile Practices",
       "level": "Advanced",
       "icon": "fa-solid fa-people-group",
-      "keywords": [
-        "Cross-functional Teamwork",
-        "Agile Development",
-        "Scrum",
-        "Code Reviews"
-      ]
+      "keywords": ["Cross-functional Teamwork", "Agile Development", "Scrum", "Code Reviews"]
     }
   ],
   "languages": [
@@ -119,41 +89,22 @@
     {
       "name": "IoT & Embedded Systems",
       "icon": "fa-solid fa-microchip",
-      "keywords": [
-        "ESP32 Projects",
-        "IoT Device Prototyping",
-        "BLE Communication",
-        "Home Automation",
-        "Smart Devices"
-      ]
+      "keywords": ["ESP32 Projects", "IoT Device Prototyping", "BLE Communication", "Home Automation", "Smart Devices"]
     },
     {
       "name": "Outdoor Activities",
       "icon": "fa-solid fa-mountain",
-      "keywords": [
-        "Trail Running",
-        "Hiking",
-        "Snowboarding"
-      ]
+      "keywords": ["Trail Running", "Hiking", "Snowboarding"]
     },
     {
       "name": "Fitness & Sports",
       "icon": "fa-solid fa-dumbbell",
-      "keywords": [
-        "Gym Training",
-        "Boxing",
-        "Strength Training"
-      ]
+      "keywords": ["Gym Training", "Boxing", "Strength Training"]
     },
     {
       "name": "Technology & Learning",
       "icon": "fa-solid fa-book",
-      "keywords": [
-        "Software Development",
-        "Backend Architecture",
-        "Hardware-Software Integration",
-        "Learning New Frameworks"
-      ]
+      "keywords": ["Software Development", "Backend Architecture", "Hardware-Software Integration", "Learning New Frameworks"]
     }
   ],
   "projects": [

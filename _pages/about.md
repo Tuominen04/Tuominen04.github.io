@@ -42,6 +42,7 @@ Currently working on an ESP32 LED controller with BLE setup, HTTP control, NVS s
 ---
 
 #### 💻 Last 4+ Years Of My Career
+
 - C# / .NET backend development
 - Unit tests
 - Access Control testing
@@ -49,18 +50,21 @@ Currently working on an ESP32 LED controller with BLE setup, HTTP control, NVS s
 ---
 
 #### 📱 Tech As a Hobby
+
 - Embedded systems with ESP32 (C / ESP-IDF)
 - Connecting hardware to mobile apps (TypeScript / React Native)
 
 ---
 
 #### 🏔 Outside the Office
+
 When I’m not coding, you’ll probably find me:
-- 🏃‍♂️ Trail running  
-- 🥊 Boxing  
-- 🏋️‍♂️ Lifting at the gym  
-- 🏂 Snowboarding  
-- 🥾 Hiking  
+
+- 🏃‍♂️ Trail running
+- 🥊 Boxing
+- 🏋️‍♂️ Lifting at the gym
+- 🏂 Snowboarding
+- 🥾 Hiking
 
 ---
 

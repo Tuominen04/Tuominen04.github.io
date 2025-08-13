@@ -13,6 +13,7 @@ related_publications: true
 <br/>
 
 ## 💡 Project Overview
+
 The **ESP32 Smart Light** is a custom firmware project built with the ESP-IDF framework in C.  
 It’s designed to control an LED over WiFi, with **Bluetooth Low Energy (BLE)** provisioning,  
 **HTTP-based control**, **non-volatile storage (NVS)** for persistent settings, and  
@@ -23,8 +24,8 @@ from low-level embedded development to network protocols and update mechanisms.
 
 <br/>
 
-
 ## ⚙️ Key Features
+
 - **BLE WiFi Provisioning** — Configure WiFi credentials via Bluetooth from a mobile device.
 - **HTTP API Control** — Control LED state using REST-style requests.
 - **NVS Storage** — Save and retrieve configuration data persistently.
@@ -33,17 +34,15 @@ from low-level embedded development to network protocols and update mechanisms.
 
 <br/>
 
-
 ## 📂 Repository
-🔗 [View on GitHub]() (*coming soon*)
+
+🔗 [View on GitHub]() (_coming soon_)
 
 <br/>
-
 
 ## 🛠️ Hardware Setup
 
 Below is the ESP32-C6 Mini hardware used in the project, shown both in real life and as a wiring diagram for clarity.
-
 
 <div class="row justify-content-left text-center">
     <div class="col-md-5 mb-3">
@@ -132,7 +131,7 @@ The screenshot below shows the OTA update process in progress, allowing you to s
 
 ## 📃 Summary
 
-In short, this was my "forever project" where there is only more to develop and the expansion of the project is only limited by my own time and interest. 
+In short, this was my "forever project" where there is only more to develop and the expansion of the project is only limited by my own time and interest.
 
 Next, I might add an RGB LED and frontend controller for it. Or whatever comes to mind. Motors? Scanners? Who knows! 😄
 
