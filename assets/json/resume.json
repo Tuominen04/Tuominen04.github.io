@@ -1,1 +1,126 @@
-{"basics":{"name":"Arttu Tuominen","label":"Software Developer","image":"","email":"arttutuominen10@gmail.com","phone":"+358 44 0278859","summary":"Backend-focused Software Developer with over 4 years of experience in C# and .NET, skilled in building and testing APIs, and improving backend systems."},"work":[{"name":"Saima Soft Oy","position":"Software Developer","url":"https://www.staffpoint.fi/saima-soft-oy","startDate":"2021-11-02","endDate":"Present","summary":"As a Software Developer at Saima Soft Oy, I have been responsible for developing and maintaining backend systems, primarily using C# and .NET. My role involves collaborating with cross-functional teams to ensure the reliability and performance of our software solutions.","highlights":["Developed and maintained API using .NET framework and C# programming language.","Collaborated with cross-functional teams to troubleshoot and resolve software issues efficiently.","Collaborated in agile team on backend architecture and features","Performed +100 access control tests for API endpoints using Postman","Gained hands-on experience in fullstack development, contributing to frontend features using TypeScript and modern frameworks (e.g., React), while primarily focused on backend services."]}],"education":[{"institution":"GRADIA Educational Consortium","location":"Jyäskylä, Finland","url":"https://opintopolku.fi/konfo/en/toteutus/1.2.246.562.17.00000000000000010733","area":"Software Development","startDate":"10.08.2020","endDate":"31.3.2023","courses":["Basic ICT tasks (25 competence points)","Coding (45 competence points)","Working as a software developer (45 competence points)","Task automation using a command language (15 competence points)","Acting in a work community (15 competence points)"]}],"skills":[{"name":".NET Backend Development","level":"Advanced","icon":"fa-solid fa-code","keywords":["C#",".NET Framework","REST API Design","API Maintenance","Backend Architecture"]},{"name":"API Testing & QA","level":"Advanced","icon":"fa-solid fa-vial","keywords":["Postman","Access Control Testing","Test Automation","Debugging","Issue Resolution"]},{"name":"Full-Stack Development","level":"Intermediate","icon":"fa-solid fa-layer-group","keywords":["TypeScript","React","Frontend Feature Development","Agile Collaboration"]},{"name":"IoT & Embedded Systems","level":"Intermediate","icon":"fa-solid fa-microchip","keywords":["ESP32","C","ESP-IDF","BLE Setup","HTTP Communication","NVS Storage","OTA Updates"]},{"name":"Collaboration & Agile Practices","level":"Advanced","icon":"fa-solid fa-people-group","keywords":["Cross-functional Teamwork","Agile Development","Scrum","Code Reviews"]}],"languages":[{"language":"Finnish","fluency":"Native speaker","icon":""},{"language":"English","fluency":"Intermediate","icon":""}],"interests":[{"name":"IoT & Embedded Systems","icon":"fa-solid fa-microchip","keywords":["ESP32 Projects","IoT Device Prototyping","BLE Communication","Home Automation","Smart Devices"]},{"name":"Outdoor Activities","icon":"fa-solid fa-mountain","keywords":["Trail Running","Hiking","Snowboarding"]},{"name":"Fitness & Sports","icon":"fa-solid fa-dumbbell","keywords":["Gym Training","Boxing","Strength Training"]},{"name":"Technology & Learning","icon":"fa-solid fa-book","keywords":["Software Development","Backend Architecture","Hardware-Software Integration","Learning New Frameworks"]}],"projects":[{"name":"ESP32 IoT LED Controller","summary":"An IoT firmware project for the ESP32 microcontroller, enabling LED control through wireless connectivity. The system supports BLE-based WiFi credential setup, HTTP requests for device control, non-volatile storage for configuration, and over-the-air (OTA) firmware updates.","highlights":["BLE setup for WiFi credentials","HTTP API for LED control","Non-volatile storage (NVS) for device configuration","Over-the-air (OTA) firmware updates","Built with ESP-IDF in C"],"startDate":"2024-06-01","endDate":"present","url":"https://github.com/Tuominen04/esp32-led-controller"}]}
+{
+  "basics": {
+    "name": "Arttu Tuominen",
+    "label": "Software Developer",
+    "image": "",
+    "email": "arttutuominen10@gmail.com",
+    "phone": "+358 44 0278859",
+    "summary": "Backend-focused Software Developer with over 4 years of experience in C# and .NET, skilled in building and testing APIs, and improving backend systems."
+  },
+  "work": [
+    {
+      "name": "Saima Soft Oy",
+      "position": "Software Developer",
+      "url": "https://www.staffpoint.fi/saima-soft-oy",
+      "startDate": "2021-11-02",
+      "endDate": "Present",
+      "summary": "As a Software Developer at Saima Soft Oy, I have been responsible for developing and maintaining backend systems, primarily using C# and .NET. My role involves collaborating with cross-functional teams to ensure the reliability and performance of our software solutions.",
+      "highlights": [
+        "Developed and maintained API using .NET framework and C# programming language.",
+        "Collaborated with cross-functional teams to troubleshoot and resolve software issues efficiently.",
+        "Collaborated in agile team on backend architecture and features",
+        "Performed +100 access control tests for API endpoints using Postman",
+        "Gained hands-on experience in fullstack development, contributing to frontend features using TypeScript and modern frameworks (e.g., React), while primarily focused on backend services."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "GRADIA Educational Consortium",
+      "location": "Jyäskylä, Finland",
+      "url": "https://opintopolku.fi/konfo/en/toteutus/1.2.246.562.17.00000000000000010733",
+      "area": "Software Development",
+      "startDate": "10.08.2020",
+      "endDate": "31.3.2023",
+      "courses": [
+        "Basic ICT tasks (25 competence points)",
+        "Coding (45 competence points)",
+        "Working as a software developer (45 competence points)",
+        "Task automation using a command language (15 competence points)",
+        "Acting in a work community (15 competence points)"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": ".NET Backend Development",
+      "level": "Advanced",
+      "icon": "fa-solid fa-code",
+      "keywords": ["C#", ".NET Framework", "REST API Design", "API Maintenance", "Backend Architecture"]
+    },
+    {
+      "name": "API Testing & QA",
+      "level": "Advanced",
+      "icon": "fa-solid fa-vial",
+      "keywords": ["Postman", "Access Control Testing", "Test Automation", "Debugging", "Issue Resolution"]
+    },
+    {
+      "name": "Full-Stack Development",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-layer-group",
+      "keywords": ["TypeScript", "React", "Frontend Feature Development", "Agile Collaboration"]
+    },
+    {
+      "name": "IoT & Embedded Systems",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-microchip",
+      "keywords": ["ESP32", "C", "ESP-IDF", "BLE Setup", "HTTP Communication", "NVS Storage", "OTA Updates"]
+    },
+    {
+      "name": "Collaboration & Agile Practices",
+      "level": "Advanced",
+      "icon": "fa-solid fa-people-group",
+      "keywords": ["Cross-functional Teamwork", "Agile Development", "Scrum", "Code Reviews"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Finnish",
+      "fluency": "Native speaker",
+      "icon": ""
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate",
+      "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "IoT & Embedded Systems",
+      "icon": "fa-solid fa-microchip",
+      "keywords": ["ESP32 Projects", "IoT Device Prototyping", "BLE Communication", "Home Automation", "Smart Devices"]
+    },
+    {
+      "name": "Outdoor Activities",
+      "icon": "fa-solid fa-mountain",
+      "keywords": ["Trail Running", "Hiking", "Snowboarding"]
+    },
+    {
+      "name": "Fitness & Sports",
+      "icon": "fa-solid fa-dumbbell",
+      "keywords": ["Gym Training", "Boxing", "Strength Training"]
+    },
+    {
+      "name": "Technology & Learning",
+      "icon": "fa-solid fa-book",
+      "keywords": ["Software Development", "Backend Architecture", "Hardware-Software Integration", "Learning New Frameworks"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "ESP32 IoT LED Controller",
+      "summary": "An IoT firmware project for the ESP32 microcontroller, enabling LED control through wireless connectivity. The system supports BLE-based WiFi credential setup, HTTP requests for device control, non-volatile storage for configuration, and over-the-air (OTA) firmware updates.",
+      "highlights": [
+        "BLE setup for WiFi credentials",
+        "HTTP API for LED control",
+        "Non-volatile storage (NVS) for device configuration",
+        "Over-the-air (OTA) firmware updates",
+        "Built with ESP-IDF in C"
+      ],
+      "startDate": "2024-06-01",
+      "endDate": "present",
+      "url": "https://github.com/Tuominen04/esp32-led-controller"
+    }
+  ]
+}
