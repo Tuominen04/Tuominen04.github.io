@@ -65,42 +65,38 @@ permissions:
   contents: write
 
 jobs:
-  deploy:
-    # available images: https://github.com/actions/runner-images#available-images
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
-      - name: Setup Ruby 💎
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
-          bundler-cache: true
-          cache-version: 2
-      - name: Setup Python 🐍
-        uses: actions/setup-python@v5
+          ruby-version: '3.x'
+
+      - name: Cache gems
+        uses: actions/cache@v4
         with:
-          python-version: "3.13"
-          cache: "pip" # caching pip dependencies
-      - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@main
-        with:
-          commitChange: false
-          valueFile: "_config.yml"
-          propertyPath: "giscus.repo"
-          value: ${{ github.repository }}
-      - name: Install and Build 🔧
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Install dependencies
         run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade nbconvert
-          export JEKYLL_ENV=production
-          bundle exec jekyll build
-      - name: Purge unused CSS 🧹
-        run: |
-          npm install -g purgecss
-          purgecss -c purgecss.config.js
-      - name: Deploy 🚀
-        if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4
+          bundle config path vendor/bundle
+          bundle install
+
+      - name: Build site with Jekyll
+        run: bundle exec jekyll build --destination _site
+
+      - name: Deploy to gh-pages branch
+        uses: jeffreytse/jekyll-deploy-action@v0.6.0
         with:
-          folder: _site
+          provider: github
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          jekyll_src: .
