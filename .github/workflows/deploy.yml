@@ -15,7 +15,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: '3.2.8'
           bundler-cache: false   # disable auto cache since we’ll control it
 
       - name: Install bundler
