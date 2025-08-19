@@ -2,7 +2,7 @@
 layout: page
 title: ESP32 Smart Light
 description: ESP-IDF IoT LED Controller with BLE provisioning, HTTP control, NVS storage, and OTA updates
-img: assets/img/esp32_project/ESP32_banner.jpg
+img: assets/img/esp32_project/esp32_banner.jpg
 importance: 1
 category: fun
 related_publications: true
