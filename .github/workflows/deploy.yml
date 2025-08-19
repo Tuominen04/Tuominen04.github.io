@@ -3,31 +3,35 @@ name: Build and Deploy Jekyll Site
 on:
   push:
     branches:
-      - main   # your source branch
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: true
+          bundler-cache: false   # disable auto cache since we’ll control it
+
+      - name: Install bundler
+        run: gem install bundler -v 2.7.1
+
+      - name: Configure bundler for Linux
+        run: bundle lock --add-platform x86_64-linux
 
       - name: Install dependencies
-        run: bundle install
+        run: bundle install --jobs 4 --retry 3
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build -d ./_site
+        run: bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          publish_branch: gh-pages
