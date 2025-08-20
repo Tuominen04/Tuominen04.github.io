@@ -36,7 +36,8 @@ from low-level embedded development to network protocols and update mechanisms.
 
 ## 📂 Repository
 
-🔗 [View on GitHub]() (_coming soon_)
+- 📱 [Mobile App](https://github.com/Tuominen04/idf-light-controller)  
+- 💡 [ESP32 Hardware](https://github.com/Tuominen04/esp32-smartlight)
 
 <br/>
 
@@ -73,7 +74,7 @@ This process allows the device to join your local network without hardcoding cre
         {% include figure.liquid loading="eager" path="assets/img/esp32_project/mobile_app/esp32_send_wifi_credentials.jpg" title="BLE WiFi setup screen" class="img-fluid rounded z-depth-1" max-width="350px" %}
     </div>
     <div class="col-sm mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/esp32_project/hardware_logs/esp32_wifi_set_up_log.png" title="WiFi Set Up Logs" class="img-fluid rounded z-depth-1" max-width="600px" %}
+        {% include figure.liquid loading="eager" path="assets/img/esp32_project/hardware_logs/esp32_wifi_set_up_log.jpg" title="WiFi Set Up Logs" class="img-fluid rounded z-depth-1" max-width="600px" %}
     </div>
 </div>
 <div class="caption">
@@ -120,7 +121,7 @@ The screenshot below shows the OTA update process in progress, allowing you to s
         {% include figure.liquid loading="eager" path="assets/img/esp32_project/mobile_app/esp32_ota_update.jpg" title="OTA Update Screen" class="img-fluid rounded z-depth-1" max-width="350px" %}
     </div>
     <div class="col-sm mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/esp32_project/hardware_logs/esp32_ota_update_log.png" title="OTA Update Logs" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/esp32_project/hardware_logs/esp32_ota_update_log.jpg" title="OTA Update Logs" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
