@@ -17,12 +17,12 @@
   
   
     
-      crime | Arttu Tuominen
+      Spotify Playlist Exporter | Arttu Tuominen
     
   
 </title>
 <meta name="author" content="Arttu Tuominen">
-<meta name="description" content="">
+<meta name="description" content="A simple Python script to export song titles and artists from a Spotify playlist into a CSV file.">
 
   <meta name="keywords" content="C#, C, React Native, TypeScript, esp32, hardware, software, backend, .net.">
 
@@ -59,7 +59,7 @@
   <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%92%BB&lt;/text&gt;&lt;/svg&gt;">
 
 <link rel="stylesheet" href="/Tuominen04/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
-<link rel="canonical" href="https://tuominen04.github.io/Tuominen04/books/category/crime/">
+<link rel="canonical" href="https://tuominen04.github.io/Tuominen04/projects/spotify_playlist_exporter/">
 
 
   <!-- Dark Mode -->
@@ -233,12 +233,12 @@
             
           
             
-          
-            
               
                 
-                <li class="nav-item ">
+                <li class="nav-item active">
                   <a class="nav-link" href="/Tuominen04/projects/">Projects
+                    
+                      <span class="sr-only">(current)</span>
                     
                   </a>
                 </li>
@@ -295,31 +295,92 @@
     <!-- Content -->
     <div class="container mt-5" role="main">
       
-        <div class="post">
+        
+
+<div class="post">
   <header class="post-header">
-    
-      <h1 class="post-title">
-<i class="fa-solid fa-tag fa-sm"></i> crime</h1>
-      <p class="post-description">an archive of books in this category</p>
-    
+    <h1 class="post-title">Spotify Playlist Exporter</h1>
+    <p class="post-description">A simple Python script to export song titles and artists from a Spotify playlist into a CSV file.</p>
   </header>
 
-  <article class="archive">
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
+  <article>
+    <hr>
+
+<p><br></p>
+
+<h3 id="-spotify-playlist-exporter">🎶 Spotify Playlist Exporter</h3>
+
+<p>This project is a small Python script that connects to the <strong>Spotify Web API</strong> and exports the songs from any public Spotify playlist into a neat <strong>CSV file</strong>.<br>
+It’s useful if you want to back up playlists, analyze your music, or just keep a record of your favorite tracks outside Spotify.</p>
+
+<p><br></p>
+
+<h3 id="-features">✨ Features</h3>
+<ul>
+  <li>Export all tracks from a public playlist</li>
+  <li>Saves track <strong>title</strong> and <strong>artist(s)</strong> into <code class="language-plaintext highlighter-rouge">track_info.csv</code>
+</li>
+  <li>Supports playlists of any length (pagination included)</li>
+  <li>Easy setup with a <code class="language-plaintext highlighter-rouge">.env</code> file (no secrets in the code)</li>
+</ul>
+
+<p><br></p>
+
+<h3 id="-how-it-works">🚀 How It Works</h3>
+<ol>
+  <li>Authenticate with Spotify using your own <strong>Client ID</strong> and <strong>Secret</strong>
+</li>
+  <li>Provide a playlist link in the <code class="language-plaintext highlighter-rouge">.env</code> file</li>
+  <li>Run the script → get a <code class="language-plaintext highlighter-rouge">CSV</code> with all tracks and artists</li>
+</ol>
+
+<p><br></p>
+
+<h3 id="-repository">📂 Repository</h3>
+<p>🔗 <a href="https://github.com/Tuominen04/spotify-playlist-exporter" rel="external nofollow noopener" target="_blank">View on GitHub</a></p>
+
+<p><br></p>
+
+<h3 id="️-tech-stack">🛠️ Tech Stack</h3>
+<ul>
+  <li>Python</li>
+  <li>
+<a href="https://spotipy.readthedocs.io/en/2.24.0/" rel="external nofollow noopener" target="_blank">Spotipy</a> (Spotify Web API wrapper)</li>
+  <li>dotenv for environment management</li>
+</ul>
+
+<p><br></p>
+
+<h3 id="-screenshots">📸 Screenshots</h3>
+<div class="row justify-content-left text-center">
+    <div class="col-md-5 mb-3">
         
-          <tr>
-            <th scope="row">Aug 21, 2025</th>
-            <td>
-              
-                <a class="post-link" href="/Tuominen04/books/the_godfather/">The Godfather</a>
-              
-            </td>
-          </tr>
-        
-      </table>
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+    <img src="/Tuominen04/assets/img/spotify_project/track_info_csv.png" class="img-fluid rounded z-depth-2" width="100%" height="auto" title="Real-life setup" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+        <p class="small text-muted mt-2">Example image of .csv file</p>
     </div>
+</div>
+
+<p><br></p>
+
   </article>
+
+  
 </div>
 
       

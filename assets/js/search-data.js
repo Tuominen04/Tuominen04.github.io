@@ -407,6 +407,11 @@ ninja.data = [{
           description: "ESP-IDF IoT LED Controller with BLE provisioning, HTTP control, NVS storage, and OTA updates",
           section: "Projects",handler: () => {
               window.location.href = "/Tuominen04/projects/esp32_smart_light/";
+            },},{id: "projects-spotify-playlist-exporter",
+          title: 'Spotify Playlist Exporter',
+          description: "A simple Python script to export song titles and artists from a Spotify playlist into a CSV file.",
+          section: "Projects",handler: () => {
+              window.location.href = "/Tuominen04/projects/spotify_playlist_exporter/";
             },},{
         id: 'social-email',
         title: 'email',
