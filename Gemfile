@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 
+
 # Core plugins that directly affect site building
 group :jekyll_plugins do
     gem 'jekyll-archives-v2'
@@ -23,6 +24,7 @@ group :jekyll_plugins do
     gem 'jemoji'
 
     gem 'classifier-reborn'  # used for content categorization during the build
+    gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 end
 
 # Gems for development or external data fetching (outside :jekyll_plugins)

@@ -12,7 +12,7 @@ related_publications: true
 
 <br/>
 
-## 💡 Project Overview
+### 💡 Project Overview
 
 The **ESP32 Smart Light** is a custom firmware project built with the ESP-IDF framework in C.  
 It’s designed to control an LED over WiFi, with **Bluetooth Low Energy (BLE)** provisioning,  
@@ -24,7 +24,7 @@ from low-level embedded development to network protocols and update mechanisms.
 
 <br/>
 
-## ⚙️ Key Features
+### ⚙️ Key Features
 
 - **BLE WiFi Provisioning** — Configure WiFi credentials via Bluetooth from a mobile device.
 - **HTTP API Control** — Control LED state using REST-style requests.
@@ -34,14 +34,14 @@ from low-level embedded development to network protocols and update mechanisms.
 
 <br/>
 
-## 📂 Repository
+### 📂 Repository
 
 - 📱 [Mobile App](https://github.com/Tuominen04/idf-light-controller)  
 - 💡 [ESP32 Hardware](https://github.com/Tuominen04/esp32-smartlight)
 
 <br/>
 
-## 🛠️ Hardware Setup
+### 🛠️ Hardware Setup
 
 Below is the ESP32-C6 Mini hardware used in the project, shown both in real life and as a wiring diagram for clarity.
 
@@ -60,7 +60,7 @@ Below is the ESP32-C6 Mini hardware used in the project, shown both in real life
 
 <br/>
 
-## 📶 BLE Device Setup
+### 📶 BLE Device Setup
 
 The mobile app enables BLE-based provisioning for your ESP32 Smart Light.  
 You can scan for nearby ESP32 devices, connect, and send WiFi credentials from your phone.  
@@ -83,7 +83,7 @@ This process allows the device to join your local network without hardcoding cre
 
 <br/>
 
-## 🏠 Home & Control Screens
+### 🏠 Home & Control Screens
 
 Below you can see the main device list and the control interface for an individual ESP32 Smart Light.  
 The home screen shows all discovered devices on your network, while the control screen allows you to toggle the light and view device details.
@@ -111,7 +111,7 @@ The home screen shows all discovered devices on your network, while the control 
 
 <br/>
 
-## 🔄 OTA Update Screen
+### 🔄 OTA Update Screen
 
 The ESP32 Smart Light supports over-the-air (OTA) firmware updates directly from the mobile app.  
 The screenshot below shows the OTA update process in progress, allowing you to seamlessly upgrade your device without physical access.
@@ -130,7 +130,7 @@ The screenshot below shows the OTA update process in progress, allowing you to s
 
 <br/>
 
-## 📃 Summary
+### 📃 Summary
 
 In short, this was my "forever project" where there is only more to develop and the expansion of the project is only limited by my own time and interest.
 
