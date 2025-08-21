@@ -24,8 +24,10 @@ group :jekyll_plugins do
     gem 'jemoji'
 
     gem 'classifier-reborn'  # used for content categorization during the build
-    gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 end
+
+# Windows-only dependency (not a Jekyll plugin)
+gem "wdm", ">= 0.1.0", platforms: [:windows]
 
 # Gems for development or external data fetching (outside :jekyll_plugins)
 group :other_plugins do
