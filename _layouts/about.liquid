@@ -30,7 +30,7 @@ layout: default
 
         {% if page.profile.more_info %}
           <div class="more-info" style="margin-top:1rem;">
-            {{ page.profile.more_info }}
+            {{ page.profile.more_info | raw }}
           </div>
         {% endif %}
       </div>

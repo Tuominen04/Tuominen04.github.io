@@ -6,6 +6,50 @@
 // Dimensions
 $max-content-width: {{ site.max_width }};
 
+@media (max-width: 768px) {
+  .about-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr; /* profile | content */
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  .profile {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 auto 1rem auto !important;
+    text-align: center !important;
+  }
+
+  .post-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .profile img {
+    max-width: 60% !important; /* keeps it reasonable */
+    height: auto;
+    border-radius: 50px !important;
+  }
+
+  .profile .more-info {
+    background: rgba(255,255,255,0.05); /* subtle background */
+    padding: 1rem;
+    border-radius: 0.75rem;
+    display: inline-block; /* keeps it compact */
+  }
+
+  .profile .more-info p {
+    display: block !important;   /* stack them vertically */
+    margin: 0.4rem 0;            /* add spacing between lines */
+    text-align: center;          /* keeps them centered under the image */
+  }
+
+  .profile .more-info span {
+    display: inline-block;       /* keep icons + text together */
+  }
+}
+
 @import
   "variables",
   "themes",
