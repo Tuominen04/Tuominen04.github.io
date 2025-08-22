@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://tuominen04.github.io/Tuominen04/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tuominen04.github.io/Tuominen04/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-22T15:22:49+00:00</updated><id>https://tuominen04.github.io/Tuominen04/feed.xml</id><title type="html">blank</title><entry><title type="html">a post with plotly.js</title><link href="https://tuominen04.github.io/Tuominen04/blog/2025/plotly/" rel="alternate" type="text/html" title="a post with plotly.js" /><published>2025-03-26T14:24:00+00:00</published><updated>2025-03-26T14:24:00+00:00</updated><id>https://tuominen04.github.io/Tuominen04/blog/2025/plotly</id><content type="html" xml:base="https://tuominen04.github.io/Tuominen04/blog/2025/plotly/"><![CDATA[<p>This is an example post with some <a href="https://plotly.com/javascript/">plotly</a> code.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://tuominen04.github.io/Tuominen04/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tuominen04.github.io/Tuominen04/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-22T15:23:59+00:00</updated><id>https://tuominen04.github.io/Tuominen04/feed.xml</id><title type="html">blank</title><entry><title type="html">a post with plotly.js</title><link href="https://tuominen04.github.io/Tuominen04/blog/2025/plotly/" rel="alternate" type="text/html" title="a post with plotly.js" /><published>2025-03-26T14:24:00+00:00</published><updated>2025-03-26T14:24:00+00:00</updated><id>https://tuominen04.github.io/Tuominen04/blog/2025/plotly</id><content type="html" xml:base="https://tuominen04.github.io/Tuominen04/blog/2025/plotly/"><![CDATA[<p>This is an example post with some <a href="https://plotly.com/javascript/">plotly</a> code.</p>
 
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">plotly
 </span><span class="sb">{
@@ -201,7 +201,7 @@ Content 2
 
 <p>With this you can generate visualizations like:</p>
 
-<ul id="log" class="tab" data-tab="ba8725ce-c397-4113-8866-aaeaa6b69684" data-name="log">
+<ul id="log" class="tab" data-tab="dbec0336-924b-4764-94af-5efbbeaaebb5" data-name="log">
   
       <li class="active" id="log-php">
           <a href="#">php </a>
@@ -216,7 +216,7 @@ Content 2
       </li>
   
 </ul>
-<ul class="tab-content" id="ba8725ce-c397-4113-8866-aaeaa6b69684" data-name="log">
+<ul class="tab-content" id="dbec0336-924b-4764-94af-5efbbeaaebb5" data-name="log">
   
       <li class="active">
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
@@ -240,7 +240,7 @@ Content 2
 
 <h2 id="another-example">Another example</h2>
 
-<ul id="data-struct" class="tab" data-tab="0bbe3c2f-98a7-42d1-893a-638bc8a4901f" data-name="data-struct">
+<ul id="data-struct" class="tab" data-tab="6f7120e9-b61e-4403-8194-a68d6955bfa9" data-name="data-struct">
   
       <li class="active" id="data-struct-yaml">
           <a href="#">yaml </a>
@@ -251,7 +251,7 @@ Content 2
       </li>
   
 </ul>
-<ul class="tab-content" id="0bbe3c2f-98a7-42d1-893a-638bc8a4901f" data-name="data-struct">
+<ul class="tab-content" id="6f7120e9-b61e-4403-8194-a68d6955bfa9" data-name="data-struct">
   
       <li class="active">
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
@@ -273,7 +273,7 @@ Content 2
 
 <h2 id="tabs-for-something-else">Tabs for something else</h2>
 
-<ul id="something-else" class="tab" data-tab="322247c1-7a84-4476-bded-fc396646b297" data-name="something-else">
+<ul id="something-else" class="tab" data-tab="63de15f9-bcfa-4dba-915b-0becf597a5a9" data-name="something-else">
   
       <li class="active" id="something-else-text">
           <a href="#">text </a>
@@ -288,7 +288,7 @@ Content 2
       </li>
   
 </ul>
-<ul class="tab-content" id="322247c1-7a84-4476-bded-fc396646b297" data-name="something-else">
+<ul class="tab-content" id="63de15f9-bcfa-4dba-915b-0becf597a5a9" data-name="something-else">
   
       <li class="active">
 <p>Regular text</p>
