@@ -44,8 +44,10 @@ Currently working on an ESP32 LED controller with BLE setup, HTTP control, NVS s
 #### 💻 Last 4+ Years Of My Career
 
 - C# / .NET backend development
-- Unit tests
-- Access Control testing
+- OpenTelemetry + Azure
+- Monitoring and system reliability
+- API security and Access Control
+- GitHub Copilot
 
 ---
 
