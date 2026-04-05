@@ -47,6 +47,52 @@ p.location {
   white-space: nowrap;
 }
 
+.work-date-column {
+  width: 100px;
+  // no negative transform — keeps grouped entries aligned with content
+}
+
+li.work-entry-grouped {
+  .work-date-badge {
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  .work-company-details {
+    padding-left: 0.25rem;
+  }
+
+  .work-company-title {
+    margin-top: 0;
+  }
+
+  .work-company-meta {
+    line-height: 1.4;
+  }
+
+  .work-role-list {
+    margin-top: 0.25rem;
+  }
+
+  .work-role-block {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  li.work-entry-grouped {
+    .work-date-column {
+      margin-bottom: 0;
+      padding-top: 0.15rem;
+    }
+
+    .work-company-details {
+      padding-left: 1rem;
+    }
+  }
+}
+
 i.iconlocation {
   color: var(--global-theme-color);
   font-size: 0.8rem;

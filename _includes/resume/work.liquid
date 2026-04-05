@@ -1,12 +1,17 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% assign work = data[1] | sort: 'startDate' | reverse %}
   {% for content in work %}
-    <li class="list-group-item">
+    {% assign has_roles = content.roles and content.roles.size > 0 %}
+    <li class="list-group-item{% if has_roles %} work-entry-grouped{% endif %}">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
           {% if content.startDate %}
-            {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
-            {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
+            {% assign startDate = content.startDate | date: '%b %Y' %}
+            {% if content.endDate and content.endDate != '' and content.endDate | downcase != 'present' %}
+              {% assign endDate = content.endDate | date: '%b %Y' %}
+            {% else %}
+              {% assign endDate = 'Present' %}
+            {% endif %}
             {% assign date = startDate | append: ' - ' %}
             {% assign date = date | append: endDate %}
           {% else %}
@@ -16,10 +21,10 @@
             <tbody>
               <tr>
                 <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ date }} </span>
+                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle{% if has_roles %} work-date-badge{% endif %}" style="min-width: 75px"> {{ date }} </span>
                 </td>
               </tr>
-              {% if content.location %}
+              {% if content.location and has_roles != true %}
                 <tr>
                   <td>
                     <p class="location">
@@ -32,19 +37,96 @@
             </tbody>
           </table>
         </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-          <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <a href="{{ content.url }}">{{ content.position }}</a>
-          </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.name }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
-          <ul class="items">
-            {% for item in content.highlights %}
-              <li>
-                <span class="item">{{ item }}</span>
-              </li>
-            {% endfor %}
-          </ul>
+        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0{% if has_roles %} work-company-details{% endif %}">
+          {% if has_roles %}
+            <h6 class="title font-weight-bold mb-1 ml-1 ml-md-4 work-company-title">
+              {% if content.url and content.url != '' %}
+                <a href="{{ content.url }}">{{ content.name }}</a>
+              {% else %}
+                {{ content.name }}
+              {% endif %}
+            </h6>
+            {% if content.duration %}
+              <p class="mb-1 ml-1 ml-md-4 text-muted work-company-meta" style="font-size: 0.95rem">{{ content.duration }}</p>
+            {% endif %}
+            {% if content.workMode %}
+              <p class="mb-3 ml-1 ml-md-4 text-muted work-company-meta" style="font-size: 0.95rem">
+                {{ content.workMode }}
+              </p>
+            {% endif %}
+
+            <div class="work-role-list ml-1 ml-md-4">
+              {% for role in content.roles %}
+                <div class="work-role-block{% unless forloop.last %} mb-4 pb-3 border-bottom{% endunless %}">
+                  <h6 class="font-weight-bold mb-1">{{ role.position }}</h6>
+
+                  {% if role.employmentType %}
+                    <p class="mb-1" style="font-size: 0.95rem">{{ role.employmentType }}</p>
+                  {% endif %}
+
+                  {% if role.startDate %}
+                    {% assign roleStartDate = role.startDate | date: '%b %Y' %}
+                    {% if role.endDate and role.endDate != '' and role.endDate | downcase != 'present' %}
+                      {% assign roleEndDate = role.endDate | date: '%b %Y' %}
+                    {% else %}
+                      {% assign roleEndDate = 'Present' %}
+                    {% endif %}
+                    <p class="mb-2 text-muted" style="font-size: 0.95rem">
+                      {{ roleStartDate }} - {{ roleEndDate }}{% if role.duration %} · {{ role.duration }}{% endif %}
+                    </p>
+                  {% endif %}
+
+                  {% if role.summary %}
+                    <p class="mb-2" style="font-size: 0.95rem; font-style: italic">{{ role.summary }}</p>
+                  {% endif %}
+
+                  {% if role.highlights %}
+                    <ul class="items mb-2">
+                      {% for item in role.highlights %}
+                        <li>
+                          <span class="item">{{ item }}</span>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          {% else %}
+            <h6 class="title font-weight-bold mb-1 ml-1 ml-md-4 work-company-title">
+              {% if content.url and content.url != '' %}
+                <a href="{{ content.url }}">{{ content.name }}</a>
+              {% else %}
+                {{ content.name }}
+              {% endif %}
+            </h6>
+
+            {% if content.workMode %}
+              <p class="mb-2 ml-1 ml-md-4 text-muted work-company-meta" style="font-size: 0.95rem">{{ content.workMode }}</p>
+            {% endif %}
+
+            {% if content.position %}
+              <h6 class="font-weight-bold mb-1 ml-1 ml-md-4">{{ content.position }}</h6>
+            {% endif %}
+
+            {% if content.employmentType %}
+              <p class="mb-1 ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.employmentType }}</p>
+            {% endif %}
+
+            {% if content.summary %}
+              <p class="mb-2 ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</p>
+            {% endif %}
+
+            {% if content.highlights %}
+              <ul class="items ml-1 ml-md-4">
+                {% for item in content.highlights %}
+                  <li>
+                    <span class="item">{{ item }}</span>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endif %}
         </div>
       </div>
     </li>
