@@ -5,29 +5,98 @@
     "image": "",
     "email": "arttutuominen10@gmail.com",
     "phone": "+358 44 0278859",
-    "summary": "Backend-focused Software Developer with over 4 years of experience in C# and .NET, skilled in building and testing APIs, and improving backend systems."
+    "summary": "Backend-focused software developer with 4+ years of experience working with .NET and C#, building and maintaining APIs for real production systems."
   },
   "work": [
     {
       "name": "Saima Soft Oy",
+      "url": "https://www.staffpoint.fi/saima-soft-oy",
+      "workMode": "Remote",
+      "startDate": "2024-06-17",
+      "endDate": "present",
       "position": "Software Developer",
+      "summary": "Maintain and develop legacy backend systems (15+ years old) built on .NET, supporting internal business-critical applications for StaffPoint Oy.",
+      "highlights": [
+        "Implemented distributed tracing and logging using OpenTelemetry and Azure Application Insights, becoming the primary developer responsible for observability and debugging workflows.",
+        "Monitor production systems, analyze logs, and resolve issues impacting real users, improving system reliability and incident response.",
+        "Focus on API security and access control, performing extensive endpoint validation and testing.",
+        "Support team productivity by introducing and guiding effective use of GitHub Copilot for development workflows."
+        ]
+    },
+    {
+      "name": "Puolustusvoimat - Försvarsmakten - Finnish Defence Forces",
+      "url": "https://puolustusvoimat.fi/en",
+      "startDate": "2023-07-03",
+      "endDate": "2024-06-13",
+      "position": "Military Service"
+    },
+    {
+      "name": "Saima Soft Oy",
       "url": "https://www.staffpoint.fi/saima-soft-oy",
       "startDate": "2021-11-02",
-      "endDate": "Present",
-      "summary": "As a Software Developer at Saima Soft Oy, I have been responsible for developing and maintaining backend systems, primarily using C# and .NET. My role involves collaborating with cross-functional teams to ensure the reliability and performance of our software solutions.",
-      "highlights": [
-        "Developed and maintained API using .NET framework and C# programming language.",
-        "Collaborated with cross-functional teams to troubleshoot and resolve software issues efficiently.",
-        "Collaborated in agile team on backend architecture and features",
-        "Performed +100 access control tests for API endpoints using Postman",
-        "Gained hands-on experience in fullstack development, contributing to frontend features using TypeScript and modern frameworks (e.g., React), while primarily focused on backend services."
+      "endDate": "2023-07-01",
+      "workMode": "Remote",
+      "roles": [
+        {
+          "position": "Software Developer",
+          "employmentType": "Full-time",
+          "startDate": "2022-12-01",
+          "endDate": "2023-07-01",
+          "summary": "Developing and maintaining backend systems for production use, with a primary focus on C# and .NET APIs, reliability, and long-term maintainability.",
+          "highlights": [
+            "Developed and maintained API features and fixes using C# and .NET.",
+            "Collaborated with cross-functional teams to troubleshoot and resolve software issues efficiently.",
+            "Worked in an agile team on backend architecture and feature development.",
+            "Contributed to frontend functionality when needed using TypeScript and React."
+          ]
+        },
+        {
+          "position": "Junior Developer",
+          "employmentType": "Part-time",
+          "startDate": "2022-02-01",
+          "endDate": "2022-12-01",
+          "duration": "11 mos",
+          "summary": "Worked alongside studies while maintaining and developing backend services for internal applications and participating in modernization work.",
+          "highlights": [
+            "Maintained and developed backend services for internal applications while studying.",
+            "Contributed to feature development and bug fixing in a .NET Core system.",
+            "Participated in modernization efforts, including upgrades from .NET Core 3.1 to .NET 8."
+          ]
+        },
+        {
+          "position": "Intern",
+          "employmentType": "Internship",
+          "startDate": "2021-11-02",
+          "endDate": "2022-02-01",
+          "duration": "4 mos",
+          "summary": "Started by learning a complex legacy backend system, focusing on bug fixing, API testing, and access control validation.",
+          "highlights": [
+            "Worked on a legacy .NET Framework backend system with a focus on bug fixing.",
+            "Performed API testing and access control validation using Postman.",
+            "Created internal documentation to improve team understanding of the system."
+          ]
+        }
       ]
-    }
+    },
+    {
+      "name": "Kärkkäinen Oy",
+      "location": "Jyväskylä, Finland",
+      "position": "Intern",
+      "url": "https://www.karkkainen.com/verkkokauppa/myymalat/jyvaskyla",
+      "workMode": "On-site",
+      "startDate": "2021-01-18",
+      "endDate": "2021-02-10",
+      "summary": "A school work placement, the topic of which was selling and customer meetings. I mainly shelved products and suggested and sold products that customers asked for.",
+      "highlights": [
+        "Gained experience in customer service and retail operations.",
+        "Learned to identify customer needs and provide appropriate product recommendations.",
+        "Improved communication skills through direct interaction with customers."
+      ]}
   ],
   "education": [
     {
       "institution": "GRADIA Educational Consortium",
-      "location": "Jyäskylä, Finland",
+      "location": "Jyväskylä, Finland",
       "url": "https://opintopolku.fi/konfo/en/toteutus/1.2.246.562.17.00000000000000010733",
       "area": "Software Development",
       "startDate": "10.08.2020",
