@@ -95,6 +95,18 @@
   ],
   "education": [
     {
+      "institution": "Open University of Jyväskylä",
+      "location": "Jyväskylä, Finland",
+      "url": "https://www.jyu.fi/en/open-university",
+      "area": "Information Technology",
+      "startDate": "Nov 2024",
+      "endDate": "Apr 2026",
+      "courses": [
+        "<a href=\"https://fitech.io/fi/opinnot/cyber-security-psychology/\" target=\"_blank\" rel=\"noopener noreferrer\">Cyber Security Psychology</a> (5 ECTS)",
+        "<a href=\"https://fitech.io/fi/opinnot/software-testing/\" target=\"_blank\" rel=\"noopener noreferrer\">Software Testing</a> (5 ECTS)"
+        ]
+    },
+    {
       "institution": "GRADIA Educational Consortium",
       "location": "Jyväskylä, Finland",
       "url": "https://opintopolku.fi/konfo/en/toteutus/1.2.246.562.17.00000000000000010733",
