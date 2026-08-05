@@ -641,7 +641,7 @@ schedule:
     description: Overview of course content and objectives
     materials:
       - name: Slides
-        url: /assets/pdf/example_pdf.pdf
+        url: /assets/pdf/arttu_tuominen_cv_en.pdf
       - name: Reading
         url: https://example.com/reading
   - week: 2
