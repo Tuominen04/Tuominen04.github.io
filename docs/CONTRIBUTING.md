@@ -40,7 +40,7 @@ You can publish and own your own plugin, then propose it for featuring in `al-fo
 2. Share plugin metadata (repo URL, gem name, plugin id, compatibility, owner, demo path).
 3. Open a PR to this starter updating:
    - [`_data/featured_plugins.yml`](../_data/featured_plugins.yml)
-   - optional demo content page/post under `_pages/` or `_posts/`
+   - optional demo content page/post under `_pages/` 
 4. If requesting **bundled** status (not only featured listing), include starter wiring updates in:
    - [Gemfile](../Gemfile)
    - [\_config.yml](../_config.yml)
@@ -149,7 +149,7 @@ To enhance GitHub Copilot's effectiveness when working with specific file types,
 - **`.github/instructions/liquid-templates.instructions.md`** – Guidance for modifying Liquid template files (`.liquid`)
 - **`.github/instructions/yaml-configuration.instructions.md`** – Guidance for configuration and data files (`_config.yml`, `_data/**/*.yml`)
 - **`.github/instructions/bibtex-bibliography.instructions.md`** – Guidance for bibliography files (`.bib`, `_bibliography/**`)
-- **`.github/instructions/markdown-content.instructions.md`** – Guidance for content files across collections (`_books/`, `_news/`, `_pages/`, `_posts/`, `_projects/`, `_teachings/`)
+- **`.github/instructions/markdown-content.instructions.md`** – Guidance for content files across collections (`_books/`, `_news/`, `_pages/`, `_projects/`, `_teachings/`)
 - **`.github/instructions/javascript-scripts.instructions.md`** – Guidance for starter JavaScript and runtime script snippets
 
 These files help Copilot agents understand project conventions, build requirements, and development workflows without requiring codebase exploration.

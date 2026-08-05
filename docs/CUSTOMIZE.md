@@ -8,7 +8,7 @@ Here we will give you some tips on how to customize the website. One important t
 
 - [Customize](#customize)
   - [Project structure](#project-structure)
-    - [Where common files moved in v1.x](#where-common-files-moved-in-v1x)
+    - [Where common files moved in `v1.x`](#where-common-files-moved-in-v1x)
   - [Configuration](#configuration)
   - [GitHub Copilot Customization Agent](#github-copilot-customization-agent)
     - [What the Agent Can Help With](#what-the-agent-can-help-with)
@@ -91,7 +91,6 @@ Here we will give you some tips on how to customize the website. One important t
   - [Adding Token for Lighthouse Badger](#adding-token-for-lighthouse-badger)
     - [Personal Access Token (fine-grained) Permissions for Lighthouse Badger:](#personal-access-token-fine-grained-permissions-for-lighthouse-badger)
   - [Customizing fonts, spacing, and more](#customizing-fonts-spacing-and-more)
-  - [Scheduled Posts](#scheduled-posts)
     - [Name Format](#name-format)
     - [Important Notes](#important-notes)
   - [GDPR Cookie Consent Dialog](#gdpr-cookie-consent-dialog)
@@ -1415,10 +1414,6 @@ Common override patterns:
 - **Components:** override cards, projects, publications, and utility classes used by your content.
 
 The easiest way to preview changes in advance is by using [Chrome dev tools](https://developer.chrome.com/docs/devtools/css) or [Firefox dev tools](https://firefox-source-docs.mozilla.org/devtools-user/). Inspect elements to see which styles apply and experiment with changes before editing the SCSS files. For more information on how to use these tools, check [Chrome](https://developer.chrome.com/docs/devtools/css) and [Firefox](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/examine_and_edit_css/index.html) how-tos, and [this tutorial](https://www.youtube.com/watch?v=l0sgiwJyEu4).
-
-## Scheduled Posts
-
-`al-folio` contains a workflow which automatically publishes all posts scheduled at a specific day, at the end of the day (23:30). By default the action is disabled, and to enable it you need to go to `.github/workflows/` and find the file called `schedule-posts.txt`. This is the workflow file. For GitHub to recognize it as one (or to enable the action), you need to rename it to `schedule-posts.yml`.
 
 In order to use this you need to save all of your "Completed" blog posts which are scheduled to be uploaded on a specific date, in a folder named `_scheduled/` in the root directory.
 
