@@ -9,7 +9,7 @@ profile:
   image: profile_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: |
-    <p><span>📧&nbsp;arttutuominen10@gmail.com</span></p>
+    <p><span>📧&nbsp;arttutuominen@protonmail.com</span></p>
     <p><span>📞&nbsp;+358 44 0278859</span></p>
     <p><span>📍&nbsp;Rovaniemi, Finland</span></p>
     <p>
