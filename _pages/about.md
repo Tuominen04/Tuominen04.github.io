@@ -11,11 +11,11 @@ profile:
   more_info: |
     <p><span>📧&nbsp;arttutuominen10@gmail.com</span></p>
     <p><span>📞&nbsp;+358 44 0278859</span></p>
-    <p><span>📍&nbsp;Jyväskylä, Finland</span></p>
+    <p><span>📍&nbsp;Rovaniemi, Finland</span></p>
     <p>
       <span>
         <i class="fab fa-linkedin" aria-hidden="true"></i>
-        &nbsp;<a href="https://www.linkedin.com/in/arttu-tuominen-86218b224" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/arttu-tuominen-86218b224" target="_blank">LinkedIn</a>
       </span>
     </p>
 selected_papers: true # includes a list of papers marked as "selected={true}"
