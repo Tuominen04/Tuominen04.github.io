@@ -33,49 +33,49 @@
     {
       "name": "Saima Soft Oy",
       "url": "https://www.staffpoint.fi/saima-soft-oy",
-      "startDate": "2021-11-02",
-      "endDate": "2023-07-01",
+      "position": "Software Developer",
+      "employmentType": "Full-time",
       "workMode": "Remote",
-      "roles": [
-        {
-          "position": "Software Developer",
-          "employmentType": "Full-time",
-          "startDate": "2022-12-01",
-          "endDate": "2023-07-01",
-          "summary": "Developing and maintaining backend systems for production use, with a primary focus on C# and .NET APIs, reliability, and long-term maintainability.",
-          "highlights": [
-            "Developed and maintained API features and fixes using C# and .NET.",
-            "Collaborated with cross-functional teams to troubleshoot and resolve software issues efficiently.",
-            "Worked in an agile team on backend architecture and feature development.",
-            "Contributed to frontend functionality when needed using TypeScript and React."
-          ]
-        },
-        {
-          "position": "Junior Developer",
-          "employmentType": "Part-time",
-          "startDate": "2022-02-01",
-          "endDate": "2022-12-01",
-          "duration": "11 mos",
-          "summary": "Worked alongside studies while maintaining and developing backend services for internal applications and participating in modernization work.",
-          "highlights": [
-            "Maintained and developed backend services for internal applications while studying.",
-            "Contributed to feature development and bug fixing in a .NET Core system.",
-            "Participated in modernization efforts, including upgrades from .NET Core 3.1 to .NET 8."
-          ]
-        },
-        {
-          "position": "Intern",
-          "employmentType": "Internship",
-          "startDate": "2021-11-02",
-          "endDate": "2022-02-01",
-          "duration": "4 mos",
-          "summary": "Started by learning a complex legacy backend system, focusing on bug fixing, API testing, and access control validation.",
-          "highlights": [
-            "Worked on a legacy .NET Framework backend system with a focus on bug fixing.",
-            "Performed API testing and access control validation using Postman.",
-            "Created internal documentation to improve team understanding of the system."
-          ]
-        }
+      "startDate": "2022-12-01",
+      "endDate": "2023-07-01",
+      "summary": "Developing and maintaining backend systems for production use, with a primary focus on C# and .NET APIs, reliability, and long-term maintainability.",
+      "highlights": [
+        "Developed and maintained API features and fixes using C# and .NET.",
+        "Collaborated with cross-functional teams to troubleshoot and resolve software issues efficiently.",
+        "Worked in an agile team on backend architecture and feature development.",
+        "Contributed to frontend functionality when needed using TypeScript and React."
+      ]
+    },
+    {
+      "name": "Saima Soft Oy",
+      "url": "https://www.staffpoint.fi/saima-soft-oy",
+      "position": "Junior Developer",
+      "employmentType": "Part-time",
+      "workMode": "Remote",
+      "startDate": "2022-02-01",
+      "endDate": "2022-12-01",
+      "duration": "11 mos",
+      "summary": "Worked alongside studies while maintaining and developing backend services for internal applications and participating in modernization work.",
+      "highlights": [
+        "Maintained and developed backend services for internal applications while studying.",
+        "Contributed to feature development and bug fixing in a .NET Core system.",
+        "Participated in modernization efforts, including upgrades from .NET Core 3.1 to .NET 8."
+      ]
+    },
+    {
+      "name": "Saima Soft Oy",
+      "url": "https://www.staffpoint.fi/saima-soft-oy",
+      "position": "Intern",
+      "employmentType": "Internship",
+      "workMode": "Remote",
+      "startDate": "2021-11-02",
+      "endDate": "2022-02-01",
+      "duration": "4 mos",
+      "summary": "Started by learning a complex legacy backend system, focusing on bug fixing, API testing, and access control validation.",
+      "highlights": [
+        "Worked on a legacy .NET Framework backend system with a focus on bug fixing.",
+        "Performed API testing and access control validation using Postman.",
+        "Created internal documentation to improve team understanding of the system."
       ]
     },
     {

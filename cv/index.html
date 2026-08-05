@@ -35,44 +35,95 @@
 
 
 
-<!-- Bootstrap & MDB -->
-<link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+<!-- Security: Content Security Policy -->
+<!-- Permissive CSP suitable for academic websites. Allows external images, videos, and common embed services. -->
+<!-- To customize for your needs, see: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;">
+<style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style>
+
+<!-- Tailwind-first core styles -->
+<link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62">
 
 
 
-<!-- Fonts & Icons -->
-<link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
-<link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772">
+
+
+
+  <!-- Tocbot -->
+  <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.css" integrity="sha256-zTN0r+0OKaIv2xqeNNIYxNk0pWJ6+IqPGc1iDgVzWF0=" crossorigin="anonymous">
+
+
+<!-- Icons -->
+
+  
+<!-- Font Awesome -->
+<link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous">
+
+<!-- Academicons -->
+<link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous">
+
+<!-- Scholar Icons -->
+<link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous">
+
+
+
 <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
 
 <!-- Code Syntax Highlighting -->
-<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
-
-
-  <!-- Sidebar Table of Contents -->
-  <link defer href="/assets/css/bootstrap-toc.min.css?6f5af0bb9aab25d79b2448143cbeaa88" rel="stylesheet">
-
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
 
 <!-- Styles -->
 
 
 
 
+
   <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%92%BB&lt;/text&gt;&lt;/svg&gt;">
 
-<link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
+
+
+
+<link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1">
+
+  <link rel="stylesheet" href="/assets/css/al-folio-cv.css?v=734ded6bdb6d549b12085aded7cf1c5e">
+
 <link rel="canonical" href="https://tuominen04.github.io/cv/">
 
 
   <!-- Dark Mode -->
-  <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script>
-  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script>
+  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
   <script>
     initTheme();
   </script>
 
 
+
+
+
+
+
+  <!-- Image Features -->
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  <!-- Right-to-left support -->
+  
 
 
 
@@ -102,15 +153,15 @@
         </a>
       
       <!-- Navbar Toggle -->
-      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
       </button>
 
-      <div class="collapse navbar-collapse text-right" id="navbarNav">
-        <ul class="navbar-nav ml-auto flex-nowrap">
+      <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
+        <ul class="navbar-nav navbar-menu-list flex-nowrap">
           
 
           <!-- About -->
@@ -122,46 +173,6 @@
 
           <!-- Other pages -->
           
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
           
             
           
@@ -257,10 +268,10 @@
           
             <!-- Toogle theme mode -->
             <li class="toggle-container">
-              <button id="light-toggle" title="Change theme">
-                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
-                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
-                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+              <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme">
+                <i class="fa-half-sun-moon" id="light-toggle-system"></i>
+                <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
+                <i class="fa-solid fa-sun" id="light-toggle-light"></i>
               </button>
             </li>
           
@@ -283,398 +294,504 @@
     <div class="container mt-5" role="main">
       
         
+        
+        
           <div class="row">
             <!-- sidebar, which will move to the top on a small screen -->
             <div class="col-sm-3">
-              <nav id="toc-sidebar" class="sticky-top"></nav>
+              <nav id="toc-sidebar" class="sticky-top toc toc-sidebar" aria-label="Table of contents" data-toc-collapse="expanded" data-toc-collapse-depth=""></nav>
             </div>
             <!-- main content area -->
             <div class="col-sm-9">
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        Cv
-        
-          <a href="https://github.com/Tuominen04/Tuominen/blob/main/arttu_tuominen_cv_en.pdf" target="_blank" rel="noopener noreferrer" class="float-right">
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>
-        
-      </h1>
-      
-    </header>
 
-    <article>
-      <div class="cv">
+
+  
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      Cv
+      
+        <a href="https://github.com/Tuominen04/Tuominen/blob/main/arttu_tuominen_cv_en.pdf" target="_blank" rel="noopener noreferrer" class="float-right">
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      
+    </h1>
+    
+  </header>
+
+  <article>
+    <div class="cv">
+      
+      
+      
+
+      
+
+      
         
-          
-            
-          
-          
-          <a class="anchor" id="basics"></a>
+
+        <!-- Contact Information -->
+        
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Basics</h3>
-            <div>
+            <h3 class="card-title font-weight-medium">Contact Information</h3>
+            
+            <table class="table table-cv table-sm table-borderless">
               
-                  <table class="table table-cv table-sm table-borderless table-responsive table-cv-map">
-  
-  
-    
-
-    <tr>
-      <td class="p-1 pr-2 font-weight-bold">
-        <b>Name</b>
-      </td>
-      <td class="p-1 pl-2 font-weight-light text">
-        
-          Arttu Tuominen
-        
-      </td>
-    </tr>
-  
-    
-
-    <tr>
-      <td class="p-1 pr-2 font-weight-bold">
-        <b>Label</b>
-      </td>
-      <td class="p-1 pl-2 font-weight-light text">
-        
-          Software Developer
-        
-      </td>
-    </tr>
-  
-    
-      
-    
-
-    <tr>
-      <td class="p-1 pr-2 font-weight-bold">
-        <b>Email</b>
-      </td>
-      <td class="p-1 pl-2 font-weight-light text">
-        
-          <a href="mailto:arttutuominen10@gmail.com" target="_blank">arttutuominen10@gmail.com</a>
-        
-      </td>
-    </tr>
-  
-    
-
-    <tr>
-      <td class="p-1 pr-2 font-weight-bold">
-        <b>Phone</b>
-      </td>
-      <td class="p-1 pl-2 font-weight-light text">
-        
-          <a href="tel:+358%2044%200278859">+358 44 0278859</a>
-        
-      </td>
-    </tr>
-  
-    
-
-    <tr>
-      <td class="p-1 pr-2 font-weight-bold">
-        <b>Summary</b>
-      </td>
-      <td class="p-1 pl-2 font-weight-light text">
-        
-          Backend-focused software developer with 4+ years of experience working with .NET and C#, building and maintaining APIs for real production systems.
-        
-      </td>
-    </tr>
-  
-</table>
-
-                
-            </div>
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
+                  <td class="p-1 pl-2 font-weight-light">Arttu Tuominen</td>
+                </tr>
+              
+              
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
+                  <td class="p-1 pl-2 font-weight-light">Software Developer</td>
+                </tr>
+              
+              
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
+                  <td class="p-1 pl-2 font-weight-light">arttutuominen10@gmail.com</td>
+                </tr>
+              
+              
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
+                  <td class="p-1 pl-2 font-weight-light">+358 44 0278859</td>
+                </tr>
+              
+              
+              
+            </table>
           </div>
         
-          
-            
-          
-          
-          <a class="anchor" id="work"></a>
+
+        <!-- Summary -->
+        
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Work</h3>
+            <h3 class="card-title font-weight-medium">Professional Summary</h3>
+            <p>Backend-focused software developer with 4+ years of experience working with .NET and C#, building and maintaining APIs for real production systems.
+</p>
+          </div>
+        
+
+        <!-- JSONResume Sections - Merge work and volunteer into Experience -->
+        
+        
+        
+        
+        
+          <a class="anchor" id="experience"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Experience</h3>
             <div>
               
-                  <ul class="card-text font-weight-light list-group list-group-flush">
+              
+
+<ul class="card-text font-weight-light list-group list-group-flush">
   
-  
-    
     <li class="list-group-item">
       <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
           
+          
+          
+          
+          
+          
+          
+          
+
+          
+
           <table class="table-cv">
             <tbody>
               <tr>
                 <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> Jun 2024 - present </span>
+                  
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">2024 - present</span>
+                  
                 </td>
               </tr>
+              
+              
               
             </tbody>
           </table>
         </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
           
-            <h6 class="title font-weight-bold mb-1 ml-1 ml-md-4 work-company-title">
-              
-                <a href="https://www.staffpoint.fi/saima-soft-oy" rel="external nofollow noopener" target="_blank">Saima Soft Oy</a>
-              
+
+          
+            <h6 class="title font-weight-bold ml-1 ml-md-4">
+              <a href="https://www.staffpoint.fi/saima-soft-oy" rel="external nofollow noopener" target="_blank">
+            Software Developer
+          </a>
             </h6>
+          
 
-            
-              <p class="mb-2 ml-1 ml-md-4 text-muted work-company-meta" style="font-size: 0.95rem">Remote</p>
-            
+          
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+            Saima Soft Oy
+          </h6>
+          
 
-            
-              <h6 class="font-weight-bold mb-1 ml-1 ml-md-4">Software Developer</h6>
-            
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+              Maintain and develop legacy backend systems (15+ years old) built on .NET, supporting internal business-critical applications for StaffPoint Oy.
 
-            
+            </h6>
+          
 
-            
-              <p class="mb-2 ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">Maintain and develop legacy backend systems (15+ years old) built on .NET, supporting internal business-critical applications for StaffPoint Oy.</p>
-            
-
-            
-              <ul class="items ml-1 ml-md-4">
-                
-                  <li>
-                    <span class="item">Implemented distributed tracing and logging using OpenTelemetry and Azure Application Insights, becoming the primary developer responsible for observability and debugging workflows.</span>
-                  </li>
-                
-                  <li>
-                    <span class="item">Monitor production systems, analyze logs, and resolve issues impacting real users, improving system reliability and incident response.</span>
-                  </li>
-                
-                  <li>
-                    <span class="item">Focus on API security and access control, performing extensive endpoint validation and testing.</span>
-                  </li>
-                
-                  <li>
-                    <span class="item">Support team productivity by introducing and guiding effective use of GitHub Copilot for development workflows.</span>
-                  </li>
-                
-              </ul>
-            
+          
+            <ul class="items">
+              
+                <li>
+                  <span class="item">Implemented distributed tracing and logging using OpenTelemetry and Azure Application Insights, becoming the primary developer responsible for observability and debugging workflows.
+</span>
+                </li>
+              
+                <li>
+                  <span class="item">Monitor production systems, analyze logs, and resolve issues impacting real users, improving system reliability and incident response.
+</span>
+                </li>
+              
+                <li>
+                  <span class="item">Focus on API security and access control, performing extensive endpoint validation and testing.
+</span>
+                </li>
+              
+                <li>
+                  <span class="item">Support team productivity by introducing and guiding effective use of GitHub Copilot for development workflows.
+</span>
+                </li>
+              
+            </ul>
           
         </div>
       </div>
     </li>
   
-    
     <li class="list-group-item">
       <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
           
+          
+          
+          
+          
+          
+          
+          
+
+          
+
           <table class="table-cv">
             <tbody>
               <tr>
                 <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> Jul 2023 - Jun 2024 </span>
+                  
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">2023 - 2024</span>
+                  
                 </td>
               </tr>
+              
+              
               
             </tbody>
           </table>
         </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
           
-            <h6 class="title font-weight-bold mb-1 ml-1 ml-md-4 work-company-title">
-              
-                <a href="https://puolustusvoimat.fi/en" rel="external nofollow noopener" target="_blank">Puolustusvoimat - Försvarsmakten - Finnish Defence Forces</a>
-              
+
+          
+            <h6 class="title font-weight-bold ml-1 ml-md-4">
+              <a href="https://puolustusvoimat.fi/en" rel="external nofollow noopener" target="_blank">
+            Military Service
+          </a>
             </h6>
+          
 
-            
+          
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+            Puolustusvoimat - Försvarsmakten - Finnish Defence Forces
+          </h6>
+          
 
-            
-              <h6 class="font-weight-bold mb-1 ml-1 ml-md-4">Military Service</h6>
-            
+          
 
-            
-
-            
-
-            
           
         </div>
       </div>
     </li>
   
-    
-    <li class="list-group-item work-entry-grouped">
+    <li class="list-group-item">
       <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
           
+          
+          
+          
+          
+          
+          
+          
+
+          
+
           <table class="table-cv">
             <tbody>
               <tr>
                 <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle work-date-badge" style="min-width: 75px"> Nov 2021 - Jul 2023 </span>
+                  
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">2022 - 2023</span>
+                  
                 </td>
               </tr>
+              
+              
               
             </tbody>
           </table>
         </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0 work-company-details">
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
           
-            <h6 class="title font-weight-bold mb-1 ml-1 ml-md-4 work-company-title">
-              
-                <a href="https://www.staffpoint.fi/saima-soft-oy" rel="external nofollow noopener" target="_blank">Saima Soft Oy</a>
-              
+
+          
+            <h6 class="title font-weight-bold ml-1 ml-md-4">
+              <a href="https://www.staffpoint.fi/saima-soft-oy" rel="external nofollow noopener" target="_blank">
+            Software Developer
+          </a>
             </h6>
-            
-            
-              <p class="mb-3 ml-1 ml-md-4 text-muted work-company-meta" style="font-size: 0.95rem">
-                Remote
-              </p>
-            
+          
 
-            <div class="work-role-list ml-1 ml-md-4">
+          
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+            Saima Soft Oy
+          </h6>
+          
+
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+              Developing and maintaining backend systems for production use, with a primary focus on C# and .NET APIs, reliability, and long-term maintainability.
+
+            </h6>
+          
+
+          
+            <ul class="items">
               
-                <div class="work-role-block mb-4 pb-3 border-bottom">
-                  <h6 class="font-weight-bold mb-1">Software Developer</h6>
-
-                  
-                    <p class="mb-1" style="font-size: 0.95rem">Full-time</p>
-                  
-
-                  
-                    
-                    
-                    <p class="mb-2 text-muted" style="font-size: 0.95rem">
-                      Dec 2022 - Jul 2023
-                    </p>
-                  
-
-                  
-                    <p class="mb-2" style="font-size: 0.95rem; font-style: italic">Developing and maintaining backend systems for production use, with a primary focus on C# and .NET APIs, reliability, and long-term maintainability.</p>
-                  
-
-                  
-                    <ul class="items mb-2">
-                      
-                        <li>
-                          <span class="item">Developed and maintained API features and fixes using C# and .NET.</span>
-                        </li>
-                      
-                        <li>
-                          <span class="item">Collaborated with cross-functional teams to troubleshoot and resolve software issues efficiently.</span>
-                        </li>
-                      
-                        <li>
-                          <span class="item">Worked in an agile team on backend architecture and feature development.</span>
-                        </li>
-                      
-                        <li>
-                          <span class="item">Contributed to frontend functionality when needed using TypeScript and React.</span>
-                        </li>
-                      
-                    </ul>
-                  
-                </div>
+                <li>
+                  <span class="item">Developed and maintained API features and fixes using C# and .NET.
+</span>
+                </li>
               
-                <div class="work-role-block mb-4 pb-3 border-bottom">
-                  <h6 class="font-weight-bold mb-1">Junior Developer</h6>
-
-                  
-                    <p class="mb-1" style="font-size: 0.95rem">Part-time</p>
-                  
-
-                  
-                    
-                    
-                    <p class="mb-2 text-muted" style="font-size: 0.95rem">
-                      Feb 2022 - Dec 2022 · 11 mos
-                    </p>
-                  
-
-                  
-                    <p class="mb-2" style="font-size: 0.95rem; font-style: italic">Worked alongside studies while maintaining and developing backend services for internal applications and participating in modernization work.</p>
-                  
-
-                  
-                    <ul class="items mb-2">
-                      
-                        <li>
-                          <span class="item">Maintained and developed backend services for internal applications while studying.</span>
-                        </li>
-                      
-                        <li>
-                          <span class="item">Contributed to feature development and bug fixing in a .NET Core system.</span>
-                        </li>
-                      
-                        <li>
-                          <span class="item">Participated in modernization efforts, including upgrades from .NET Core 3.1 to .NET 8.</span>
-                        </li>
-                      
-                    </ul>
-                  
-                </div>
+                <li>
+                  <span class="item">Collaborated with cross-functional teams to troubleshoot and resolve software issues efficiently.
+</span>
+                </li>
               
-                <div class="work-role-block">
-                  <h6 class="font-weight-bold mb-1">Intern</h6>
-
-                  
-                    <p class="mb-1" style="font-size: 0.95rem">Internship</p>
-                  
-
-                  
-                    
-                    
-                    <p class="mb-2 text-muted" style="font-size: 0.95rem">
-                      Nov 2021 - Feb 2022 · 4 mos
-                    </p>
-                  
-
-                  
-                    <p class="mb-2" style="font-size: 0.95rem; font-style: italic">Started by learning a complex legacy backend system, focusing on bug fixing, API testing, and access control validation.</p>
-                  
-
-                  
-                    <ul class="items mb-2">
-                      
-                        <li>
-                          <span class="item">Worked on a legacy .NET Framework backend system with a focus on bug fixing.</span>
-                        </li>
-                      
-                        <li>
-                          <span class="item">Performed API testing and access control validation using Postman.</span>
-                        </li>
-                      
-                        <li>
-                          <span class="item">Created internal documentation to improve team understanding of the system.</span>
-                        </li>
-                      
-                    </ul>
-                  
-                </div>
+                <li>
+                  <span class="item">Worked in an agile team on backend architecture and feature development.
+</span>
+                </li>
               
-            </div>
+                <li>
+                  <span class="item">Contributed to frontend functionality when needed using TypeScript and React.
+</span>
+                </li>
+              
+            </ul>
           
         </div>
       </div>
     </li>
   
-    
     <li class="list-group-item">
       <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
           
+          
+          
+          
+          
+          
+          
+          
+
+          
+
           <table class="table-cv">
             <tbody>
               <tr>
                 <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> Jan 2021 - Feb 2021 </span>
+                  
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">2022 - 2022</span>
+                  
                 </td>
               </tr>
+              
+              
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+          
+
+          
+            <h6 class="title font-weight-bold ml-1 ml-md-4">
+              <a href="https://www.staffpoint.fi/saima-soft-oy" rel="external nofollow noopener" target="_blank">
+            Junior Developer
+          </a>
+            </h6>
+          
+
+          
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+            Saima Soft Oy
+          </h6>
+          
+
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+              Worked alongside studies while maintaining and developing backend services for internal applications and participating in modernization work.
+
+            </h6>
+          
+
+          
+            <ul class="items">
+              
+                <li>
+                  <span class="item">Maintained and developed backend services for internal applications while studying.
+</span>
+                </li>
+              
+                <li>
+                  <span class="item">Contributed to feature development and bug fixing in a .NET Core system.
+</span>
+                </li>
+              
+                <li>
+                  <span class="item">Participated in modernization efforts, including upgrades from .NET Core 3.1 to .NET 8.
+</span>
+                </li>
+              
+            </ul>
+          
+        </div>
+      </div>
+    </li>
+  
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+
+          <table class="table-cv">
+            <tbody>
+              <tr>
+                <td>
+                  
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">2021 - 2022</span>
+                  
+                </td>
+              </tr>
+              
+              
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+          
+
+          
+            <h6 class="title font-weight-bold ml-1 ml-md-4">
+              <a href="https://www.staffpoint.fi/saima-soft-oy" rel="external nofollow noopener" target="_blank">
+            Intern
+          </a>
+            </h6>
+          
+
+          
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+            Saima Soft Oy
+          </h6>
+          
+
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+              Started by learning a complex legacy backend system, focusing on bug fixing, API testing, and access control validation.
+
+            </h6>
+          
+
+          
+            <ul class="items">
+              
+                <li>
+                  <span class="item">Worked on a legacy .NET Framework backend system with a focus on bug fixing.
+</span>
+                </li>
+              
+                <li>
+                  <span class="item">Performed API testing and access control validation using Postman.
+</span>
+                </li>
+              
+                <li>
+                  <span class="item">Created internal documentation to improve team understanding of the system.
+</span>
+                </li>
+              
+            </ul>
+          
+        </div>
+      </div>
+    </li>
+  
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+
+          <table class="table-cv">
+            <tbody>
+              <tr>
+                <td>
+                  
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">2021 - 2021</span>
+                  
+                </td>
+              </tr>
+              
+              
               
                 <tr>
                   <td>
@@ -688,45 +805,50 @@
             </tbody>
           </table>
         </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
           
-            <h6 class="title font-weight-bold mb-1 ml-1 ml-md-4 work-company-title">
-              
-                <a href="https://www.karkkainen.com/verkkokauppa/myymalat/jyvaskyla" rel="external nofollow noopener" target="_blank">Kärkkäinen Oy</a>
-              
+
+          
+            <h6 class="title font-weight-bold ml-1 ml-md-4">
+              <a href="https://www.karkkainen.com/verkkokauppa/myymalat/jyvaskyla" rel="external nofollow noopener" target="_blank">
+            Intern
+          </a>
             </h6>
+          
 
-            
-              <p class="mb-2 ml-1 ml-md-4 text-muted work-company-meta" style="font-size: 0.95rem">On-site</p>
-            
+          
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+            Kärkkäinen Oy
+          </h6>
+          
 
-            
-              <h6 class="font-weight-bold mb-1 ml-1 ml-md-4">Intern</h6>
-            
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+              A school work placement, the topic of which was selling and customer meetings. I mainly shelved products and suggested and sold products that customers asked for.
 
-            
+            </h6>
+          
 
-            
-              <p class="mb-2 ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">A school work placement, the topic of which was selling and customer meetings. I mainly shelved products and suggested and sold products that customers asked for.</p>
-            
-
-            
-              <ul class="items ml-1 ml-md-4">
-                
-                  <li>
-                    <span class="item">Gained experience in customer service and retail operations.</span>
-                  </li>
-                
-                  <li>
-                    <span class="item">Learned to identify customer needs and provide appropriate product recommendations.</span>
-                  </li>
-                
-                  <li>
-                    <span class="item">Improved communication skills through direct interaction with customers.</span>
-                  </li>
-                
-              </ul>
-            
+          
+            <ul class="items">
+              
+                <li>
+                  <span class="item">Gained experience in customer service and retail operations.
+</span>
+                </li>
+              
+                <li>
+                  <span class="item">Learned to identify customer needs and provide appropriate product recommendations.
+</span>
+                </li>
+              
+                <li>
+                  <span class="item">Improved communication skills through direct interaction with customers.
+</span>
+                </li>
+              
+            </ul>
           
         </div>
       </div>
@@ -734,35 +856,46 @@
   
 </ul>
 
-                
             </div>
           </div>
         
-          
-            
-          
-          
+
+        <!-- Education -->
+        
           <a class="anchor" id="education"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Education</h3>
             <div>
               
-                  <ul class="card-text font-weight-light list-group list-group-flush">
-  
+              
+
+<ul class="card-text font-weight-light list-group list-group-flush">
   
     <li class="list-group-item">
       <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
           
+          
+          
+          
+          
+          
+          
+          
+
+          
+
           <table class="table-cv">
             <tbody>
               <tr>
                 <td>
                   
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> Nov 2024 - Apr 2026 </span>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">Nov 2024 - Apr 2026</span>
                   
                 </td>
               </tr>
+              
+              
               
                 <tr>
                   <td>
@@ -776,40 +909,68 @@
             </tbody>
           </table>
         </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-          <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <a href="https://www.jyu.fi/en/open-university" rel="external nofollow noopener" target="_blank"></a>
-          </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">Open University of Jyväskylä</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">Information Technology</h6>
-          <ul class="items">
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+          
+
+          
+            <h6 class="title font-weight-bold ml-1 ml-md-4">
+              <a href="https://www.jyu.fi/en/open-university" rel="external nofollow noopener" target="_blank">
             
-              <li>
-                <span class="item"><a href="https://fitech.io/fi/opinnot/cyber-security-psychology/" target="_blank" rel="noopener noreferrer">Cyber Security Psychology</a> (5 ECTS)</span>
-              </li>
-            
-              <li>
-                <span class="item"><a href="https://fitech.io/fi/opinnot/software-testing/" target="_blank" rel="noopener noreferrer">Software Testing</a> (5 ECTS)</span>
-              </li>
-            
-          </ul>
+          </a>
+            </h6>
+          
+
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">Open University of Jyväskylä</h6>
+          
+
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">Information Technology</h6>
+          
+
+          
+            <ul class="items">
+              
+                <li>
+                  <span class="item"><a href="https://fitech.io/fi/opinnot/cyber-security-psychology/" target="_blank" rel="noopener noreferrer">Cyber Security Psychology</a> (5 ECTS)</span>
+                </li>
+              
+                <li>
+                  <span class="item"><a href="https://fitech.io/fi/opinnot/software-testing/" target="_blank" rel="noopener noreferrer">Software Testing</a> (5 ECTS)</span>
+                </li>
+              
+              
+            </ul>
+          
         </div>
       </div>
     </li>
   
     <li class="list-group-item">
       <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
           
+          
+          
+          
+          
+          
+          
+          
+
+          
+
           <table class="table-cv">
             <tbody>
               <tr>
                 <td>
                   
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 10.08.2020 - 31.3.2023 </span>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">10.08.2020 - 31.3.2023</span>
                   
                 </td>
               </tr>
+              
+              
               
                 <tr>
                   <td>
@@ -823,653 +984,514 @@
             </tbody>
           </table>
         </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-          <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <a href="https://opintopolku.fi/konfo/en/toteutus/1.2.246.562.17.00000000000000010733" rel="external nofollow noopener" target="_blank"></a>
-          </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">GRADIA Educational Consortium</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">Software Development</h6>
-          <ul class="items">
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+          
+
+          
+            <h6 class="title font-weight-bold ml-1 ml-md-4">
+              <a href="https://opintopolku.fi/konfo/en/toteutus/1.2.246.562.17.00000000000000010733" rel="external nofollow noopener" target="_blank">
             
-              <li>
-                <span class="item">Basic ICT tasks (25 competence points)</span>
-              </li>
-            
-              <li>
-                <span class="item">Coding (45 competence points)</span>
-              </li>
-            
-              <li>
-                <span class="item">Working as a software developer (45 competence points)</span>
-              </li>
-            
-              <li>
-                <span class="item">Task automation using a command language (15 competence points)</span>
-              </li>
-            
-              <li>
-                <span class="item">Acting in a work community (15 competence points)</span>
-              </li>
-            
-          </ul>
+          </a>
+            </h6>
+          
+
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">GRADIA Educational Consortium</h6>
+          
+
+          
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">Software Development</h6>
+          
+
+          
+            <ul class="items">
+              
+                <li>
+                  <span class="item">Basic ICT tasks (25 competence points)</span>
+                </li>
+              
+                <li>
+                  <span class="item">Coding (45 competence points)</span>
+                </li>
+              
+                <li>
+                  <span class="item">Working as a software developer (45 competence points)</span>
+                </li>
+              
+                <li>
+                  <span class="item">Task automation using a command language (15 competence points)</span>
+                </li>
+              
+                <li>
+                  <span class="item">Acting in a work community (15 competence points)</span>
+                </li>
+              
+              
+            </ul>
+          
         </div>
       </div>
     </li>
   
 </ul>
 
-                
             </div>
           </div>
         
-          
-            
-          
-          
+
+        <!-- Awards -->
+        
+
+        <!-- Publications -->
+        
+
+        <!-- Skills -->
+        
           <a class="anchor" id="skills"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Skills</h3>
             <div>
               
-                  <div class="list-groups">
+              
+
+<div class="card-text font-weight-light">
   
-    <div class="list-group col-md-6" title="Advanced">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            
-              <td class="list-group-category-icon">
-                <i class="fa-solid fa-code"></i>
-              </td>
-            
-            <!-- Calculate colspan number for category title -->
-            
-            
-            <td colspan="1" class="list-group-category">.NET Backend Development</td>
-          </tr>
+    <div class="skill-item">
+      
+        <i class="fa-solid fa-code"></i>
+      
+      <strong>.NET Backend Development (Advanced):</strong>
+      
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>C#</b>
-              </td>
-            </tr>
+            C#,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>.NET Framework</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>REST API Design</b>
-              </td>
-            </tr>
+            .NET Framework,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>API Maintenance</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Backend Architecture</b>
-              </td>
-            </tr>
+            REST API Design,
           
-        </tbody>
-      </table>
+        
+          
+            API Maintenance,
+          
+        
+          
+            Backend Architecture
+          
+        
+      
     </div>
   
-    <div class="list-group col-md-6" title="Advanced">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            
-              <td class="list-group-category-icon">
-                <i class="fa-solid fa-vial"></i>
-              </td>
-            
-            <!-- Calculate colspan number for category title -->
-            
-            
-            <td colspan="1" class="list-group-category">API Testing &amp; QA</td>
-          </tr>
+    <div class="skill-item">
+      
+        <i class="fa-solid fa-vial"></i>
+      
+      <strong>API Testing &amp; QA (Advanced):</strong>
+      
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Postman</b>
-              </td>
-            </tr>
+            Postman,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Access Control Testing</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Test Automation</b>
-              </td>
-            </tr>
+            Access Control Testing,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Debugging</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Issue Resolution</b>
-              </td>
-            </tr>
+            Test Automation,
           
-        </tbody>
-      </table>
+        
+          
+            Debugging,
+          
+        
+          
+            Issue Resolution
+          
+        
+      
     </div>
   
-    <div class="list-group col-md-6" title="Intermediate">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            
-              <td class="list-group-category-icon">
-                <i class="fa-solid fa-layer-group"></i>
-              </td>
-            
-            <!-- Calculate colspan number for category title -->
-            
-            
-            <td colspan="1" class="list-group-category">Full-Stack Development</td>
-          </tr>
+    <div class="skill-item">
+      
+        <i class="fa-solid fa-layer-group"></i>
+      
+      <strong>Full-Stack Development (Intermediate):</strong>
+      
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>TypeScript</b>
-              </td>
-            </tr>
+            TypeScript,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>React</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Frontend Feature Development</b>
-              </td>
-            </tr>
+            React,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Agile Collaboration</b>
-              </td>
-            </tr>
+        
           
-        </tbody>
-      </table>
+            Frontend Feature Development,
+          
+        
+          
+            Agile Collaboration
+          
+        
+      
     </div>
   
-    <div class="list-group col-md-6" title="Intermediate">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            
-              <td class="list-group-category-icon">
-                <i class="fa-solid fa-microchip"></i>
-              </td>
-            
-            <!-- Calculate colspan number for category title -->
-            
-            
-            <td colspan="1" class="list-group-category">IoT &amp; Embedded Systems</td>
-          </tr>
+    <div class="skill-item">
+      
+        <i class="fa-solid fa-microchip"></i>
+      
+      <strong>IoT &amp; Embedded Systems (Intermediate):</strong>
+      
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>ESP32</b>
-              </td>
-            </tr>
+            ESP32,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>C</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>ESP-IDF</b>
-              </td>
-            </tr>
+            C,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>BLE Setup</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>HTTP Communication</b>
-              </td>
-            </tr>
+            ESP-IDF,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>NVS Storage</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>OTA Updates</b>
-              </td>
-            </tr>
+            BLE Setup,
           
-        </tbody>
-      </table>
+        
+          
+            HTTP Communication,
+          
+        
+          
+            NVS Storage,
+          
+        
+          
+            OTA Updates
+          
+        
+      
     </div>
   
-    <div class="list-group col-md-6" title="Advanced">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            
-              <td class="list-group-category-icon">
-                <i class="fa-solid fa-people-group"></i>
-              </td>
-            
-            <!-- Calculate colspan number for category title -->
-            
-            
-            <td colspan="1" class="list-group-category">Collaboration &amp; Agile Practices</td>
-          </tr>
+    <div class="skill-item">
+      
+        <i class="fa-solid fa-people-group"></i>
+      
+      <strong>Collaboration &amp; Agile Practices (Advanced):</strong>
+      
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Cross-functional Teamwork</b>
-              </td>
-            </tr>
+            Cross-functional Teamwork,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Agile Development</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Scrum</b>
-              </td>
-            </tr>
+            Agile Development,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Code Reviews</b>
-              </td>
-            </tr>
+        
           
-        </tbody>
-      </table>
+            Scrum,
+          
+        
+          
+            Code Reviews
+          
+        
+      
     </div>
   
 </div>
 
-                
+<style>
+  .skill-item {
+    padding: 0.5rem 0;
+  }
+</style>
+
             </div>
           </div>
         
-          
-            
-          
-          
+
+        <!-- Languages -->
+        
           <a class="anchor" id="languages"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Languages</h3>
             <div>
               
-                  <div class="list-groups">
+              
+
+<div class="card-text font-weight-light">
   
-    <div class="list-group col-md-6">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            
-              <td class="list-group-category-icon">
-                <i class=""></i>
-              </td>
-            
-            <!-- Calculate colspan number for category title -->
-            
-            
-            <td colspan="1" class="list-group-category">Finnish</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="list-group-name">
-              <b>Native speaker</b>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="language-item">
+      
+        <i class=""></i>
+      
+      
+      
+      <strong>
+        Finnish
+      :</strong> 
+        Native speaker
+      
     </div>
   
-    <div class="list-group col-md-6">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            
-              <td class="list-group-category-icon">
-                <i class=""></i>
-              </td>
-            
-            <!-- Calculate colspan number for category title -->
-            
-            
-            <td colspan="1" class="list-group-category">English</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="list-group-name">
-              <b>Intermediate</b>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="language-item">
+      
+        <i class=""></i>
+      
+      
+      
+      <strong>
+        English
+      :</strong> 
+        Intermediate
+      
     </div>
   
 </div>
 
-                
+<style>
+  .language-item {
+    padding: 0.5rem 0;
+  }
+</style>
+
             </div>
           </div>
         
-          
-            
-          
-          
+
+        <!-- Interests -->
+        
           <a class="anchor" id="interests"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Interests</h3>
             <div>
               
-                  <div class="list-groups">
+              
+
+<div class="card-text font-weight-light">
   
-    <div class="list-group col-md-6">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            
-              <td class="list-group-category-icon">
-                <i class="fa-solid fa-microchip"></i>
-              </td>
-            
-            <!-- Calculate colspan number for category title -->
-            
-            
-            <td colspan="1" class="list-group-category">IoT &amp; Embedded Systems</td>
-          </tr>
+    <div class="interest-item">
+      
+        <i class="fa-solid fa-microchip"></i>
+      
+      <strong>IoT &amp; Embedded Systems:</strong>
+      
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>ESP32 Projects</b>
-              </td>
-            </tr>
+            ESP32 Projects,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>IoT Device Prototyping</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>BLE Communication</b>
-              </td>
-            </tr>
+            IoT Device Prototyping,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Home Automation</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Smart Devices</b>
-              </td>
-            </tr>
+            BLE Communication,
           
-        </tbody>
-      </table>
+        
+          
+            Home Automation,
+          
+        
+          
+            Smart Devices
+          
+        
+      
     </div>
   
-    <div class="list-group col-md-6">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            
-              <td class="list-group-category-icon">
-                <i class="fa-solid fa-mountain"></i>
-              </td>
-            
-            <!-- Calculate colspan number for category title -->
-            
-            
-            <td colspan="1" class="list-group-category">Outdoor Activities</td>
-          </tr>
+    <div class="interest-item">
+      
+        <i class="fa-solid fa-mountain"></i>
+      
+      <strong>Outdoor Activities:</strong>
+      
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Trail Running</b>
-              </td>
-            </tr>
+            Trail Running,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Hiking</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Snowboarding</b>
-              </td>
-            </tr>
+            Hiking,
           
-        </tbody>
-      </table>
+        
+          
+            Snowboarding
+          
+        
+      
     </div>
   
-    <div class="list-group col-md-6">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            
-              <td class="list-group-category-icon">
-                <i class="fa-solid fa-dumbbell"></i>
-              </td>
-            
-            <!-- Calculate colspan number for category title -->
-            
-            
-            <td colspan="1" class="list-group-category">Fitness &amp; Sports</td>
-          </tr>
+    <div class="interest-item">
+      
+        <i class="fa-solid fa-dumbbell"></i>
+      
+      <strong>Fitness &amp; Sports:</strong>
+      
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Gym Training</b>
-              </td>
-            </tr>
+            Gym Training,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Boxing</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Strength Training</b>
-              </td>
-            </tr>
+            Boxing,
           
-        </tbody>
-      </table>
+        
+          
+            Strength Training
+          
+        
+      
     </div>
   
-    <div class="list-group col-md-6">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            
-              <td class="list-group-category-icon">
-                <i class="fa-solid fa-book"></i>
-              </td>
-            
-            <!-- Calculate colspan number for category title -->
-            
-            
-            <td colspan="1" class="list-group-category">Technology &amp; Learning</td>
-          </tr>
+    <div class="interest-item">
+      
+        <i class="fa-solid fa-book"></i>
+      
+      <strong>Technology &amp; Learning:</strong>
+      
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Software Development</b>
-              </td>
-            </tr>
+            Software Development,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Backend Architecture</b>
-              </td>
-            </tr>
+        
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Hardware-Software Integration</b>
-              </td>
-            </tr>
+            Backend Architecture,
           
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>Learning New Frameworks</b>
-              </td>
-            </tr>
+        
           
-        </tbody>
-      </table>
+            Hardware-Software Integration,
+          
+        
+          
+            Learning New Frameworks
+          
+        
+      
     </div>
   
 </div>
 
-                
+<style>
+  .interest-item {
+    padding: 0.5rem 0;
+  }
+</style>
+
             </div>
           </div>
         
-          
-            
-          
-          
+
+        <!-- Certificates -->
+        
+
+        <!-- Projects -->
+        
           <a class="anchor" id="projects"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Projects</h3>
             <div>
               
-                  <ul class="card-text font-weight-light list-group list-group-flush">
+              
+
+<ul class="card-text font-weight-light list-group list-group-flush">
   
     <li class="list-group-item">
-      <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-          
-          <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 2024.06 - present </span>
-        </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-          <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <a href="https://github.com/Tuominen04/esp32-led-controller" rel="external nofollow noopener" target="_blank">ESP32 IoT LED Controller</a>
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+
+      
+
+      
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+            <table class="table-cv">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">2024 - present</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+        
+          <h6 class="title font-weight-bold">
+            <a href="https://github.com/Tuominen04/esp32-led-controller" target="_blank" rel="external nofollow noopener">ESP32 IoT LED Controller</a>
           </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">An IoT firmware project for the ESP32 microcontroller, enabling LED control through wireless connectivity. The system supports BLE-based WiFi credential setup, HTTP requests for device control, non-volatile storage for configuration, and over-the-air (OTA) firmware updates.</h6>
+        
+
+        
+          <p>An IoT firmware project for the ESP32 microcontroller, enabling LED control through wireless connectivity. The system supports BLE-based WiFi credential setup, HTTP requests for device control, non-volatile storage for configuration, and over-the-air (OTA) firmware updates.
+</p>
+        
+
+        
           <ul class="items">
             
               <li>
-                <span class="item">BLE setup for WiFi credentials</span>
+                <span class="item">BLE setup for WiFi credentials
+</span>
               </li>
             
               <li>
-                <span class="item">HTTP API for LED control</span>
+                <span class="item">HTTP API for LED control
+</span>
               </li>
             
               <li>
-                <span class="item">Non-volatile storage (NVS) for device configuration</span>
+                <span class="item">Non-volatile storage (NVS) for device configuration
+</span>
               </li>
             
               <li>
-                <span class="item">Over-the-air (OTA) firmware updates</span>
+                <span class="item">Over-the-air (OTA) firmware updates
+</span>
               </li>
             
               <li>
-                <span class="item">Built with ESP-IDF in C</span>
+                <span class="item">Built with ESP-IDF in C
+</span>
               </li>
             
           </ul>
-        </div>
+        
       </div>
+        </div>
+      
     </li>
   
 </ul>
 
-                
             </div>
           </div>
         
-      </div>
-    </article>
-  </div>
+
+        <!-- References -->
+        
+
+      
+    </div>
+  </article>
+</div>
+
 
 </div>
           </div>
@@ -1481,21 +1503,42 @@
     
 
 
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      
+  © Copyright 2026
+  Arttu
+  
+  Tuominen. 
+  
+  
+
+    </div>
+  </footer>
+
 
 
     <!-- JavaScripts -->
-    <!-- jQuery -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script>
 
-<!-- Bootsrap & MDB scripts -->
-<script src="/assets/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+<!-- Core navigation/runtime scripts -->
+<script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script>
+
 
 
   <!-- Masonry & imagesLoaded -->
   <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
-  <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script>
+  <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script>
+
+
+
+  <!-- Charts and Diagrams -->
+  
 
 
 
@@ -1503,41 +1546,33 @@
 
 
 
+  <!-- Math and Tikzjax -->
+  
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script>
+<script src="/assets/al_math/js/mathjax-setup.js"></script>
 
 
 
 
 
+<!-- Tooltips & popovers runtime -->
+<script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script>
 
 
 
 
 
-
-
-
-
-
-
-  <!-- Medium Zoom JS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
-  <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
-
-
-
-  <!-- Sidebar Table of Contents -->
-  <script defer src="/assets/js/bootstrap-toc.min.js?c82ff4de8b0955d6ff14f5b05eed7eb6"></script>
-
-
+  <!-- Tocbot -->
+  <script defer src="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.min.js" integrity="sha256-lo/r+jQ81wWrxdIiiiEEd538z4+dTJTt+leOuAS7GCw=" crossorigin="anonymous"></script>
 
 
 <!-- Load Common JS -->
-<script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script>
-<script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script>
-<script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script>
+<script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script>
+<script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script>
+<script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script>
 
 <!-- Jupyter Open External Links New Tab -->
-<script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script>
+<script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script>
 
 <!-- Badges -->
 
@@ -1548,35 +1583,44 @@
 
 
 
-  <!-- MathJax -->
-  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script>
-  
-    <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script>
-    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+
+  <!-- Analytics -->
   
 
 
 
 
+
+  <!-- Image Features -->
+  
+<!-- Medium Zoom JS -->
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+<script defer src="/assets/al_img_tools/js/zoom.js"></script>
 
 
 
 
 
   <!-- Scrolling Progress Bar -->
-  <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script>
-
-
+  <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script>
 
 
 
 
 
   <!-- Back to Top -->
-  <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script>
+  
   <script>
     addBackToTop();
   </script>
+
+
+
+
 
 
 
