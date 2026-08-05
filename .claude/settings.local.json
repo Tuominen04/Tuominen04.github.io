@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//home/iamtuominen/.claude/**)",
+      "Read(//home/iamtuominen/**)",
+      "Bash(curl -fsSL --max-time 8 \"https://downloads.claude.ai/claude-code-releases/latest\")",
+      "Bash(echo \"exit: $?\")",
+      "Bash(git remote *)",
+      "Bash(git fetch *)",
+      "Bash(git rev-list *)",
+      "Bash(docker exec *)",
+      "Bash(docker port *)",
+      "Read(//usr/local/rvm/gems/default/gems/**)",
+      "Read(//usr/local/rvm/gems/default/gems/al_folio_core-1.0.15/**)"
+    ]
+  }
+}
