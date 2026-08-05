@@ -8,7 +8,7 @@ Here we will give you some tips on how to customize the website. One important t
 
 - [Customize](#customize)
   - [Project structure](#project-structure)
-    - [Where common files moved in `v1.x`](#where-common-files-moved-in-v1x)
+    - [Where common files moved in v1.x](#where-common-files-moved-in-v1x)
   - [Configuration](#configuration)
   - [GitHub Copilot Customization Agent](#github-copilot-customization-agent)
     - [What the Agent Can Help With](#what-the-agent-can-help-with)
