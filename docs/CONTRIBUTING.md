@@ -40,7 +40,7 @@ You can publish and own your own plugin, then propose it for featuring in `al-fo
 2. Share plugin metadata (repo URL, gem name, plugin id, compatibility, owner, demo path).
 3. Open a PR to this starter updating:
    - [`_data/featured_plugins.yml`](../_data/featured_plugins.yml)
-   - optional demo content page/post under `_pages/` 
+   - optional demo content page/post under `_pages/`
 4. If requesting **bundled** status (not only featured listing), include starter wiring updates in:
    - [Gemfile](../Gemfile)
    - [\_config.yml](../_config.yml)
