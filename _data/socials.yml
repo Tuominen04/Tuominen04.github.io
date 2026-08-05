@@ -1,10 +1,10 @@
 # this file contains the social media links and usernames of the author
-# the commented lines are the default social media links supported by the template
 # the socials will be displayed in the order they are defined here
 
 # acm_id: # your dl.acm.org/profile/id
 # blogger_url: # your blogger URL
 # bluesky_url: # your bluesky URL
+cv_pdf: /assets/pdf/arttu_tuominen_cv_en.pdf # path to your CV PDF file
 # dblp_url: # your DBLP profile url
 # discord_id: # your discord id (18-digit unique numerical identifier)
 email: arttutuominen10@gmail.com # your email address
@@ -51,3 +51,4 @@ whatsapp_number: +358440278859 # your WhatsApp number (full phone number in inte
   # logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
   # title: Custom Social
   # url: https://www.alberteinstein.com/
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials

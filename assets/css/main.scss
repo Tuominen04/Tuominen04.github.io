@@ -1,10 +1,33 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
+/*****************************
+ * Only the main Sass file needs front matter (the dashes are enough)
+ *****************************/
+
 @charset "utf-8";
 
-// Dimensions
-$max-content-width: {{ site.max_width }};
+@use "sass:math";
+@use "sass:string";
+
+@use "variables" with (
+  $max-content-width: {{ site.max_width }}
+);
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
 
 @media (max-width: 768px) {
   .about-grid {
@@ -13,7 +36,7 @@ $max-content-width: {{ site.max_width }};
     gap: 2rem;
     align-items: start;
   }
-  
+
   .profile {
     float: none !important;
     width: 100% !important;
@@ -49,21 +72,3 @@ $max-content-width: {{ site.max_width }};
     display: inline-block;       /* keep icons + text together */
   }
 }
-
-@import
-  "variables",
-  "themes",
-  "layout",
-  "base",
-  "distill",
-  "cv",
-  "tabs",
-  "typograms",
-  "font-awesome/fontawesome",
-  "font-awesome/brands",
-  "font-awesome/solid",
-  "font-awesome/regular",
-  "tabler-icons/tabler-icons.scss",
-  "tabler-icons/tabler-icons-filled.scss",
-  "tabler-icons/tabler-icons-outline.scss"
-;
