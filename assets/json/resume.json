@@ -1,1 +1,207 @@
-{"basics":{"name":"Arttu Tuominen","label":"Software Developer","image":"","email":"arttutuominen10@gmail.com","phone":"+358 44 0278859","summary":"Backend-focused software developer with 4+ years of experience working with .NET and C#, building and maintaining APIs for real production systems."},"work":[{"name":"Saima Soft Oy","url":"https://www.staffpoint.fi/saima-soft-oy","workMode":"Remote","startDate":"2024-06-17","endDate":"present","position":"Software Developer","summary":"Maintain and develop legacy backend systems (15+ years old) built on .NET, supporting internal business-critical applications for StaffPoint Oy.","highlights":["Implemented distributed tracing and logging using OpenTelemetry and Azure Application Insights, becoming the primary developer responsible for observability and debugging workflows.","Monitor production systems, analyze logs, and resolve issues impacting real users, improving system reliability and incident response.","Focus on API security and access control, performing extensive endpoint validation and testing.","Support team productivity by introducing and guiding effective use of GitHub Copilot for development workflows."]},{"name":"Puolustusvoimat - Försvarsmakten - Finnish Defence Forces","url":"https://puolustusvoimat.fi/en","startDate":"2023-07-03","endDate":"2024-06-13","position":"Military Service"},{"name":"Saima Soft Oy","url":"https://www.staffpoint.fi/saima-soft-oy","position":"Software Developer","employmentType":"Full-time","workMode":"Remote","startDate":"2022-12-01","endDate":"2023-07-01","summary":"Developing and maintaining backend systems for production use, with a primary focus on C# and .NET APIs, reliability, and long-term maintainability.","highlights":["Developed and maintained API features and fixes using C# and .NET.","Collaborated with cross-functional teams to troubleshoot and resolve software issues efficiently.","Worked in an agile team on backend architecture and feature development.","Contributed to frontend functionality when needed using TypeScript and React."]},{"name":"Saima Soft Oy","url":"https://www.staffpoint.fi/saima-soft-oy","position":"Junior Developer","employmentType":"Part-time","workMode":"Remote","startDate":"2022-02-01","endDate":"2022-12-01","duration":"11 mos","summary":"Worked alongside studies while maintaining and developing backend services for internal applications and participating in modernization work.","highlights":["Maintained and developed backend services for internal applications while studying.","Contributed to feature development and bug fixing in a .NET Core system.","Participated in modernization efforts, including upgrades from .NET Core 3.1 to .NET 8."]},{"name":"Saima Soft Oy","url":"https://www.staffpoint.fi/saima-soft-oy","position":"Intern","employmentType":"Internship","workMode":"Remote","startDate":"2021-11-02","endDate":"2022-02-01","duration":"4 mos","summary":"Started by learning a complex legacy backend system, focusing on bug fixing, API testing, and access control validation.","highlights":["Worked on a legacy .NET Framework backend system with a focus on bug fixing.","Performed API testing and access control validation using Postman.","Created internal documentation to improve team understanding of the system."]},{"name":"Kärkkäinen Oy","location":"Jyväskylä, Finland","position":"Intern","url":"https://www.karkkainen.com/verkkokauppa/myymalat/jyvaskyla","workMode":"On-site","startDate":"2021-01-18","endDate":"2021-02-10","summary":"A school work placement, the topic of which was selling and customer meetings. I mainly shelved products and suggested and sold products that customers asked for.","highlights":["Gained experience in customer service and retail operations.","Learned to identify customer needs and provide appropriate product recommendations.","Improved communication skills through direct interaction with customers."]}],"education":[{"institution":"Open University of Jyväskylä","location":"Jyväskylä, Finland","url":"https://www.jyu.fi/en/open-university","area":"Information Technology","startDate":"Nov 2024","endDate":"Apr 2026","courses":["<a href=\"https://fitech.io/fi/opinnot/cyber-security-psychology/\" target=\"_blank\" rel=\"noopener noreferrer\">Cyber Security Psychology</a> (5 ECTS)","<a href=\"https://fitech.io/fi/opinnot/software-testing/\" target=\"_blank\" rel=\"noopener noreferrer\">Software Testing</a> (5 ECTS)"]},{"institution":"GRADIA Educational Consortium","location":"Jyväskylä, Finland","url":"https://opintopolku.fi/konfo/en/toteutus/1.2.246.562.17.00000000000000010733","area":"Software Development","startDate":"10.08.2020","endDate":"31.3.2023","courses":["Basic ICT tasks (25 competence points)","Coding (45 competence points)","Working as a software developer (45 competence points)","Task automation using a command language (15 competence points)","Acting in a work community (15 competence points)"]}],"skills":[{"name":".NET Backend Development","level":"Advanced","icon":"fa-solid fa-code","keywords":["C#",".NET Framework","REST API Design","API Maintenance","Backend Architecture"]},{"name":"API Testing & QA","level":"Advanced","icon":"fa-solid fa-vial","keywords":["Postman","Access Control Testing","Test Automation","Debugging","Issue Resolution"]},{"name":"Full-Stack Development","level":"Intermediate","icon":"fa-solid fa-layer-group","keywords":["TypeScript","React","Frontend Feature Development","Agile Collaboration"]},{"name":"IoT & Embedded Systems","level":"Intermediate","icon":"fa-solid fa-microchip","keywords":["ESP32","C","ESP-IDF","BLE Setup","HTTP Communication","NVS Storage","OTA Updates"]},{"name":"Collaboration & Agile Practices","level":"Advanced","icon":"fa-solid fa-people-group","keywords":["Cross-functional Teamwork","Agile Development","Scrum","Code Reviews"]}],"languages":[{"language":"Finnish","fluency":"Native speaker","icon":""},{"language":"English","fluency":"Intermediate","icon":""}],"interests":[{"name":"IoT & Embedded Systems","icon":"fa-solid fa-microchip","keywords":["ESP32 Projects","IoT Device Prototyping","BLE Communication","Home Automation","Smart Devices"]},{"name":"Outdoor Activities","icon":"fa-solid fa-mountain","keywords":["Trail Running","Hiking","Snowboarding"]},{"name":"Fitness & Sports","icon":"fa-solid fa-dumbbell","keywords":["Gym Training","Boxing","Strength Training"]},{"name":"Technology & Learning","icon":"fa-solid fa-book","keywords":["Software Development","Backend Architecture","Hardware-Software Integration","Learning New Frameworks"]}],"projects":[{"name":"ESP32 IoT LED Controller","summary":"An IoT firmware project for the ESP32 microcontroller, enabling LED control through wireless connectivity. The system supports BLE-based WiFi credential setup, HTTP requests for device control, non-volatile storage for configuration, and over-the-air (OTA) firmware updates.","highlights":["BLE setup for WiFi credentials","HTTP API for LED control","Non-volatile storage (NVS) for device configuration","Over-the-air (OTA) firmware updates","Built with ESP-IDF in C"],"startDate":"2024-06-01","endDate":"present","url":"https://github.com/Tuominen04/esp32-led-controller"}]}
+{
+  "basics": {
+    "name": "Arttu Tuominen",
+    "label": "Software Developer",
+    "image": "",
+    "email": "arttutuominen@protonmail.com",
+    "phone": "+358 44 0278859",
+    "summary": "Backend-focused software developer with 4+ years of experience working with .NET and C#, building and maintaining APIs for real production systems."
+  },
+  "work": [
+    {
+      "name": "Saima Soft Oy",
+      "url": "https://www.staffpoint.fi/saima-soft-oy",
+      "workMode": "Remote",
+      "startDate": "2024-06-17",
+      "endDate": "present",
+      "position": "Software Developer",
+      "summary": "Maintain and develop legacy backend systems (15+ years old) built on .NET, supporting internal business-critical applications for StaffPoint Oy.",
+      "highlights": [
+        "Implemented distributed tracing and logging using OpenTelemetry and Azure Application Insights, becoming the primary developer responsible for observability and debugging workflows.",
+        "Monitor production systems, analyze logs, and resolve issues impacting real users, improving system reliability and incident response.",
+        "Focus on API security and access control, performing extensive endpoint validation and testing.",
+        "Support team productivity by introducing and guiding effective use of GitHub Copilot for development workflows."
+        ]
+    },
+    {
+      "name": "Puolustusvoimat - Försvarsmakten - Finnish Defence Forces",
+      "url": "https://puolustusvoimat.fi/en",
+      "startDate": "2023-07-03",
+      "endDate": "2024-06-13",
+      "position": "Military Service"
+    },
+    {
+      "name": "Saima Soft Oy",
+      "url": "https://www.staffpoint.fi/saima-soft-oy",
+      "position": "Software Developer",
+      "employmentType": "Full-time",
+      "workMode": "Remote",
+      "startDate": "2022-12-01",
+      "endDate": "2023-07-01",
+      "summary": "Developing and maintaining backend systems for production use, with a primary focus on C# and .NET APIs, reliability, and long-term maintainability.",
+      "highlights": [
+        "Developed and maintained API features and fixes using C# and .NET.",
+        "Collaborated with cross-functional teams to troubleshoot and resolve software issues efficiently.",
+        "Worked in an agile team on backend architecture and feature development.",
+        "Contributed to frontend functionality when needed using TypeScript and React."
+      ]
+    },
+    {
+      "name": "Saima Soft Oy",
+      "url": "https://www.staffpoint.fi/saima-soft-oy",
+      "position": "Junior Developer",
+      "employmentType": "Part-time",
+      "workMode": "Remote",
+      "startDate": "2022-02-01",
+      "endDate": "2022-12-01",
+      "duration": "11 mos",
+      "summary": "Worked alongside studies while maintaining and developing backend services for internal applications and participating in modernization work.",
+      "highlights": [
+        "Maintained and developed backend services for internal applications while studying.",
+        "Contributed to feature development and bug fixing in a .NET Core system.",
+        "Participated in modernization efforts, including upgrades from .NET Core 3.1 to .NET 8."
+      ]
+    },
+    {
+      "name": "Saima Soft Oy",
+      "url": "https://www.staffpoint.fi/saima-soft-oy",
+      "position": "Intern",
+      "employmentType": "Internship",
+      "workMode": "Remote",
+      "startDate": "2021-11-02",
+      "endDate": "2022-02-01",
+      "duration": "4 mos",
+      "summary": "Started by learning a complex legacy backend system, focusing on bug fixing, API testing, and access control validation.",
+      "highlights": [
+        "Worked on a legacy .NET Framework backend system with a focus on bug fixing.",
+        "Performed API testing and access control validation using Postman.",
+        "Created internal documentation to improve team understanding of the system."
+      ]
+    },
+    {
+      "name": "Kärkkäinen Oy",
+      "location": "Rovaniemi, Finland",
+      "position": "Intern",
+      "url": "https://www.karkkainen.com/verkkokauppa/myymalat/jyvaskyla",
+      "workMode": "On-site",
+      "startDate": "2021-01-18",
+      "endDate": "2021-02-10",
+      "summary": "A school work placement, the topic of which was selling and customer meetings. I mainly shelved products and suggested and sold products that customers asked for.",
+      "highlights": [
+        "Gained experience in customer service and retail operations.",
+        "Learned to identify customer needs and provide appropriate product recommendations.",
+        "Improved communication skills through direct interaction with customers."
+      ]}
+  ],
+  "education": [
+    {
+      "institution": "Open University of Rovaniemi",
+      "location": "Rovaniemi, Finland",
+      "url": "https://www.jyu.fi/en/open-university",
+      "area": "Information Technology",
+      "startDate": "Nov 2024",
+      "endDate": "Apr 2026",
+      "courses": [
+        "<a href=\"https://fitech.io/fi/opinnot/cyber-security-psychology/\" target=\"_blank\" rel=\"noopener noreferrer\">Cyber Security Psychology</a> (5 ECTS)",
+        "<a href=\"https://fitech.io/fi/opinnot/software-testing/\" target=\"_blank\" rel=\"noopener noreferrer\">Software Testing</a> (5 ECTS)"
+        ]
+    },
+    {
+      "institution": "GRADIA Educational Consortium",
+      "location": "Rovaniemi, Finland",
+      "url": "https://opintopolku.fi/konfo/en/toteutus/1.2.246.562.17.00000000000000010733",
+      "area": "Software Development",
+      "startDate": "10.08.2020",
+      "endDate": "31.3.2023",
+      "courses": [
+        "Basic ICT tasks (25 competence points)",
+        "Coding (45 competence points)",
+        "Working as a software developer (45 competence points)",
+        "Task automation using a command language (15 competence points)",
+        "Acting in a work community (15 competence points)"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": ".NET Backend Development",
+      "level": "Advanced",
+      "icon": "fa-solid fa-code",
+      "keywords": ["C#", ".NET Framework", "REST API Design", "API Maintenance", "Backend Architecture"]
+    },
+    {
+      "name": "API Testing & QA",
+      "level": "Advanced",
+      "icon": "fa-solid fa-vial",
+      "keywords": ["Postman", "Access Control Testing", "Test Automation", "Debugging", "Issue Resolution"]
+    },
+    {
+      "name": "Full-Stack Development",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-layer-group",
+      "keywords": ["TypeScript", "React", "Frontend Feature Development", "Agile Collaboration"]
+    },
+    {
+      "name": "IoT & Embedded Systems",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-microchip",
+      "keywords": ["ESP32", "C", "ESP-IDF", "BLE Setup", "HTTP Communication", "NVS Storage", "OTA Updates"]
+    },
+    {
+      "name": "Collaboration & Agile Practices",
+      "level": "Advanced",
+      "icon": "fa-solid fa-people-group",
+      "keywords": ["Cross-functional Teamwork", "Agile Development", "Scrum", "Code Reviews"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Finnish",
+      "fluency": "Native speaker",
+      "icon": ""
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate",
+      "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "IoT & Embedded Systems",
+      "icon": "fa-solid fa-microchip",
+      "keywords": ["ESP32 Projects", "IoT Device Prototyping", "BLE Communication", "Home Automation", "Smart Devices"]
+    },
+    {
+      "name": "Outdoor Activities",
+      "icon": "fa-solid fa-mountain",
+      "keywords": ["Trail Running", "Hiking", "Snowboarding"]
+    },
+    {
+      "name": "Fitness & Sports",
+      "icon": "fa-solid fa-dumbbell",
+      "keywords": ["Gym Training", "Boxing", "Strength Training"]
+    },
+    {
+      "name": "Technology & Learning",
+      "icon": "fa-solid fa-book",
+      "keywords": ["Software Development", "Backend Architecture", "Hardware-Software Integration", "Learning New Frameworks"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "ESP32 IoT LED Controller",
+      "summary": "An IoT firmware project for the ESP32 microcontroller, enabling LED control through wireless connectivity. The system supports BLE-based WiFi credential setup, HTTP requests for device control, non-volatile storage for configuration, and over-the-air (OTA) firmware updates.",
+      "highlights": [
+        "BLE setup for WiFi credentials",
+        "HTTP API for LED control",
+        "Non-volatile storage (NVS) for device configuration",
+        "Over-the-air (OTA) firmware updates",
+        "Built with ESP-IDF in C"
+      ],
+      "startDate": "2024-06-01",
+      "endDate": "present",
+      "url": "https://github.com/Tuominen04/esp32-led-controller"
+    }
+  ]
+}
