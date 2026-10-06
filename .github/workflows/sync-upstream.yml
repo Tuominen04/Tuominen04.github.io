@@ -1,0 +1,144 @@
+name: Sync upstream al-folio
+
+# Merges alshedivat/al-folio main into an `upstream-sync` branch and opens a PR
+# for review. Nothing is pushed to main automatically: gem bumps can change
+# files this site overrides locally (_layouts, _includes, _sass), so a human
+# should check the build before merging.
+on:
+  # 06:00 UTC on the 1st and 15th of every month (roughly every two weeks).
+  # For monthly, use "0 6 1 * *".
+  schedule:
+    - cron: "0 6 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+env:
+  UPSTREAM_REPO: https://github.com/alshedivat/al-folio.git
+  UPSTREAM_BRANCH: main
+  SYNC_BRANCH: upstream-sync
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    if: github.repository != 'alshedivat/al-folio'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # GITHUB_TOKEN cannot push commits that touch .github/workflows/, and
+          # upstream regularly edits its workflows. Add a fine-grained PAT with
+          # Contents, Pull requests, Issues and Workflows (read/write) as the
+          # UPSTREAM_SYNC_TOKEN secret to avoid that; it also lets CI run on the PR.
+          token: ${{ secrets.UPSTREAM_SYNC_TOKEN || github.token }}
+
+      - name: Merge upstream
+        id: merge
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add upstream "$UPSTREAM_REPO"
+          git fetch --no-tags upstream "$UPSTREAM_BRANCH"
+
+          if git merge-base --is-ancestor "upstream/$UPSTREAM_BRANCH" HEAD; then
+            echo "Already up to date with upstream."
+            echo "status=uptodate" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git checkout -B "$SYNC_BRANCH"
+          {
+            echo "commits<<EOF"
+            git log --oneline --no-merges "HEAD..upstream/$UPSTREAM_BRANCH" | head -50
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+          if git merge --no-edit "upstream/$UPSTREAM_BRANCH"; then
+            echo "status=merged" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Files this site deleted but upstream modified (e.g. readme_preview/*.png):
+          # keep the deletion.
+          git status --porcelain | awk '$1 == "DU" {print $2}' | xargs -r git rm --quiet
+
+          remaining=$(git diff --name-only --diff-filter=U)
+          if [ -z "$remaining" ]; then
+            git commit --no-edit
+            echo "status=merged" >> "$GITHUB_OUTPUT"
+          else
+            git merge --abort
+            {
+              echo "conflicts<<EOF"
+              echo "$remaining"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+            echo "status=conflict" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Push branch and open PR
+        if: steps.merge.outputs.status == 'merged'
+        env:
+          GH_TOKEN: ${{ secrets.UPSTREAM_SYNC_TOKEN || github.token }}
+          COMMITS: ${{ steps.merge.outputs.commits }}
+        run: |
+          git push --force origin "$SYNC_BRANCH"
+
+          body=$(cat <<EOF
+          Automated merge of \`alshedivat/al-folio@$UPSTREAM_BRANCH\`.
+
+          New upstream commits:
+          \`\`\`
+          $COMMITS
+          \`\`\`
+
+          Before merging:
+          - \`bundle install && bundle exec jekyll serve\` and check the site
+          - \`bundle exec al-folio upgrade overrides audit\` (local overrides vs. updated gems)
+          - make sure upstream demo content didn't overwrite your own (_bibliography, _data, _pages)
+          EOF
+          )
+
+          if gh pr view "$SYNC_BRANCH" --json state -q .state 2>/dev/null | grep -q OPEN; then
+            gh pr edit "$SYNC_BRANCH" --body "$body"
+          else
+            gh pr create --base main --head "$SYNC_BRANCH" \
+              --title "Sync upstream al-folio ($(date -u +%Y-%m-%d))" --body "$body"
+          fi
+
+      - name: Report conflicts
+        if: steps.merge.outputs.status == 'conflict'
+        env:
+          GH_TOKEN: ${{ secrets.UPSTREAM_SYNC_TOKEN || github.token }}
+          CONFLICTS: ${{ steps.merge.outputs.conflicts }}
+        run: |
+          title="Upstream sync needs a manual merge"
+          body=$(cat <<EOF
+          Merging \`alshedivat/al-folio@$UPSTREAM_BRANCH\` conflicts in:
+          \`\`\`
+          $CONFLICTS
+          \`\`\`
+
+          Resolve locally:
+          \`\`\`
+          git fetch upstream
+          git checkout -b sync-upstream origin/main
+          git merge upstream/main
+          \`\`\`
+          Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          EOF
+          )
+
+          existing=$(gh issue list --state open --search "in:title \"$title\"" --json number -q '.[0].number')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi
