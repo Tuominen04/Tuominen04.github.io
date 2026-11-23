@@ -8,14 +8,14 @@ Built with [Jekyll](https://jekyllrb.com/) on the [al-folio](https://github.com/
 
 ## Where the content lives
 
-| What                          | File                                                                                     |
-| ----------------------------- | ---------------------------------------------------------------------------------------- |
-| About page (home)             | `_pages/about.md`                                                                        |
-| Projects                      | `_projects/*.md` (card order is the `importance` value, lowest first)                    |
+| What                          | File                                                                                          |
+| ----------------------------- | --------------------------------------------------------------------------------------------- |
+| About page (home)             | `_pages/about.md`                                                                             |
+| Projects                      | `_projects/*.md` (card order is the `importance` value, lowest first)                         |
 | CV page                       | `assets/json/resume.json` (JSON Resume format, loaded via `jekyll_get_json` in `_config.yml`) |
-| CV PDFs                       | `assets/pdf/arttu_tuominen_cv_en.pdf`, `assets/pdf/arttu_tuominen_cv_fi.pdf`             |
-| Site description and keywords | `_config.yml` (`description`, `keywords`)                                                |
-| CV page styling               | bottom of `assets/css/main.scss`                                                         |
+| CV PDFs                       | `assets/pdf/arttu_tuominen_cv_en.pdf`, `assets/pdf/arttu_tuominen_cv_fi.pdf`                  |
+| Site description and keywords | `_config.yml` (`description`, `keywords`)                                                     |
+| CV page styling               | bottom of `assets/css/main.scss`                                                              |
 
 When the CV changes, replace both PDFs and update `assets/json/resume.json` so the CV page matches.
 
