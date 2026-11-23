@@ -1,9 +1,10 @@
 ---
 layout: page
 title: ESP32 Smart Light
-description: ESP-IDF IoT LED Controller with BLE provisioning, HTTP control, NVS storage, and OTA updates
+description: "C · ESP-IDF · React Native — firmware with BLE, Wi-Fi, HTTP API and OTA updates, plus a mobile app to control it."
+github: https://github.com/Tuominen04/esp32-smartlight
 img: assets/img/esp32_project/esp32_banner.jpg
-importance: 1
+importance: 3
 category: fun
 related_publications: true
 ---

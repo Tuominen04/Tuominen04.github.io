@@ -36,25 +36,25 @@ latest_posts:
 
 ### 👋 Shortly
 
-Backend developer & IoT tinkerer — I build code that talks to hardware.  
-Currently working on an ESP32 LED controller with BLE setup, HTTP control, NVS storage, and OTA updates.
+Software developer focused on quality, test automation and observability. I build and maintain .NET/C# production systems, keep CI and tests healthy, and bring AI tooling into my team's workflow. On my own time I build local-first software and tinker with hardware.
 
 ---
 
-#### 💻 Last 4+ Years Of My Career
+#### 💻 What I work on
 
 - C# / .NET backend development
-- OpenTelemetry + Azure
-- Monitoring and system reliability
-- API security and Access Control
-- GitHub Copilot
+- CI/CD and automated testing (xUnit, MSTest, JMeter, Playwright)
+- OpenTelemetry and Azure Application Insights
+- API security (Cloudflare rate limiting, access control)
+- AI agents and MCP (GitHub Copilot, spec-kit)
 
 ---
 
 #### 📱 Tech As a Hobby
 
-- Embedded systems with ESP32 (C / ESP-IDF)
-- Connecting hardware to mobile apps (TypeScript / React Native)
+- Rust + Tauri desktop apps
+- Local LLMs with Ollama
+- ESP32 embedded projects (C / ESP-IDF) with React Native companion apps
 
 ---
 

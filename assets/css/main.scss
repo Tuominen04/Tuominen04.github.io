@@ -72,3 +72,56 @@
     display: inline-block;       /* keep icons + text together */
   }
 }
+
+/* CV page: no divider lines or marker dots around the date badges */
+.cv table.table-cv td,
+.cv table.table-cv th {
+  border-top: 0;
+}
+
+.cv .list-group-item {
+  list-style: none;
+}
+
+.cv .list-group-item::marker {
+  content: none;
+}
+
+.cv .list-group-item::before,
+.cv .list-group-item::after,
+.cv .date-column::before,
+.cv .date-column::after {
+  display: none;
+}
+
+/* CV page: fixed-width date column so all badges share one left edge; location text centered under the badge */
+.cv .date-column table.table-cv {
+  width: 6.5rem;
+  margin: 0;
+}
+
+.cv .date-column table.table-cv td {
+  text-align: center;
+}
+
+.cv .date-column .badge {
+  display: block;
+  width: 100%;
+  min-width: 0 !important;
+  white-space: nowrap;
+}
+
+.cv .date-column p.location {
+  white-space: normal;
+  text-align: center;
+  margin: 0.25rem 0 0;
+}
+
+/* CV page: breathing room between each section header and its first row */
+.cv .card .card-title {
+  margin-bottom: 1.25rem;
+}
+
+.cv .date-column p.location {
+  white-space: nowrap;
+}
