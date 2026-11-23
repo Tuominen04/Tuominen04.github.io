@@ -1,32 +1,34 @@
-# My personal portfolio website
+# Arttu Tuominen — Portfolio
 
-Go check it out: [https://tuominen04.github.io](https://tuominen04.github.io/)
+**Live site:** [tuominen04.github.io](https://tuominen04.github.io/)
 
-Portfolio of Arttu Tuominen, a software developer focused on quality, test automation and observability (C#/.NET, CI/CD, OpenTelemetry, Azure, Rust, AI agents and MCP).
+Software developer focused on quality, test automation and observability. About 3 years of professional experience building and maintaining .NET/C# production systems, keeping CI and tests healthy, and bringing AI tooling into a team's workflow. Based in Rovaniemi, Finland; works remotely.
 
-Built with [Jekyll](https://jekyllrb.com/) on the [al-folio](https://github.com/alshedivat/al-folio) starter and hosted on GitHub Pages.
+## What I do
 
-## Where the content lives
+- **Backend:** C# / .NET (10, 8, Framework), REST APIs, Azure.
+- **Quality and CI/CD:** automated testing with xUnit, MSTest, JMeter, Playwright and Postman; Azure DevOps pipelines.
+- **Observability:** OpenTelemetry and Azure Application Insights.
+- **Security:** API rate limiting with Cloudflare, access-control testing.
+- **AI tooling:** AI agents and MCP, GitHub Copilot, spec-kit, local LLMs with Ollama.
 
-| What                          | File                                                                                     |
-| ----------------------------- | ---------------------------------------------------------------------------------------- |
-| About page (home)             | `_pages/about.md`                                                                        |
-| Projects                      | `_projects/*.md` (card order is the `importance` value, lowest first)                    |
-| CV page                       | `assets/json/resume.json` (JSON Resume format, loaded via `jekyll_get_json` in `_config.yml`) |
-| CV PDFs                       | `assets/pdf/arttu_tuominen_cv_en.pdf`, `assets/pdf/arttu_tuominen_cv_fi.pdf`             |
-| Site description and keywords | `_config.yml` (`description`, `keywords`)                                                |
-| CV page styling               | bottom of `assets/css/main.scss`                                                         |
+## Selected projects
 
-When the CV changes, replace both PDFs and update `assets/json/resume.json` so the CV page matches.
+- [Learning Corner](https://github.com/Tuominen04/learning-corner): offline-first desktop app for source-backed notes with APA 7 citations (Rust, Tauri, TypeScript).
+- [AI Workspace](https://github.com/Tuominen04/ai-workspace): local AI workspace that answers questions about your project notes without any data leaving the computer (Fedora, Ollama).
+- ESP32 Smart Light: firmware with BLE, Wi-Fi, HTTP API and OTA updates ([firmware](https://github.com/Tuominen04/esp32-smartlight)) plus a React Native control app ([mobile app](https://github.com/Tuominen04/idf-light-controller)).
 
-## Run locally
+## CV
 
-```bash
-bundle install
-bundle exec jekyll serve      # http://localhost:4000/
-bundle exec jekyll build      # one-off build to _site/
-```
+- [CV (English)](assets/pdf/arttu_tuominen_cv_en.pdf)
+- [CV (Finnish)](assets/pdf/arttu_tuominen_cv_fi.pdf)
 
-`baseurl` is empty in `_config.yml`, so the site is served at the root. Restart the server after editing `_config.yml`. Deployment is automatic: pushing to `main` runs the GitHub Actions deploy workflow.
+## Contact
 
-For maintainer and agent notes see [AGENTS.md](AGENTS.md) and [CLAUDE.md](CLAUDE.md).
+- Email: arttutuominen@protonmail.com
+- LinkedIn: [arttu-tuominen](https://www.linkedin.com/in/arttu-tuominen-86218b224)
+- GitHub: [Tuominen04](https://github.com/Tuominen04)
+
+## About this site
+
+Built with [Jekyll](https://jekyllrb.com/) on the [al-folio](https://github.com/alshedivat/al-folio) starter and hosted on GitHub Pages. Maintainer notes (content locations, local setup, CI) are in [AGENTS.md](AGENTS.md).
