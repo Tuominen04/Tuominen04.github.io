@@ -4,6 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
+This repo is Arttu Tuominen's personal site (a fork of the al-folio starter); **read the "This fork" section of `AGENTS.md` first** — it lists what differs from upstream (content sources, local overrides, CI, `gh -R`). Most of the upstream-oriented guidance below still applies unless that section says otherwise.
+
 `AGENTS.md` (imported above) is the **authoritative** agent entry point: change routing, the stop sign for gem-owned paths, the three silent failure modes, and the validated command set. Keep it short and ecosystem-neutral. Cross-repo architecture — the wrapper/tag/gem delegation table, feature gating, the v1 config contract, local overrides — lives in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md); area-to-gem ownership lives in [`docs/BOUNDARIES.md`](docs/BOUNDARIES.md).
 
 **Read those three before editing anything.** Everything below is Claude-specific or longer-form operational detail that does not belong in the short entry point. Do not restate facts from those files here — link to them.
@@ -12,8 +14,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 bundle install                                # ruby gems
-bundle exec jekyll serve                      # dev server → http://localhost:4000/al-folio/  (NOTE baseurl)
-bundle exec jekyll build --baseurl /al-folio  # production-style build to _site/
+bundle exec jekyll serve                      # dev server → http://localhost:4000/  (this fork has an empty baseurl)
+bundle exec jekyll build                      # production-style build to _site/
 bash test/integration_distill.sh              # run ONE integration test (any of the seven in test/)
 npm run test:visual:update                    # refresh playwright snapshots after intentional UI change
 bundle exec al-folio upgrade apply --safe     # deterministic codemods (font-weight-* → font-*, remote→local URLs)

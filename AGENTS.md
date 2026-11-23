@@ -4,6 +4,17 @@
 
 `al-folio` v1.x is a **thin Jekyll starter, not a theme**. This repo owns starter wiring, example content, docs, and cross-plugin tests. All runtime — layouts, includes, Sass, Liquid tags, filters, feature JS — lives in versioned gems published under [`al-org-dev`](https://github.com/al-org-dev).
 
+## This fork (Tuominen04.github.io)
+
+This repo is a personal site built from the al-folio starter, so some upstream rules below do not apply as written:
+
+- **Live site:** <https://tuominen04.github.io/>, deployed from `main` by GitHub Actions. `baseurl` is empty, so local dev is `http://localhost:4000/` (no `/al-folio`).
+- **Content sources:** About is `_pages/about.md`; projects are `_projects/*.md` (ordered by `importance`); the CV page renders `assets/json/resume.json` (via `jekyll_get_json`), not `_data/cv.yml`, which is the unused upstream sample. CV PDFs are in `assets/pdf/` (`_en` and `_fi`) and the CV page links both.
+- **Local overrides exist on purpose:** `_layouts/about.liquid`, `_includes/resume/work.liquid` and `_sass/_cv.scss`. CV-page styling tweaks go at the bottom of `assets/css/main.scss`. The stop sign below describes upstream; here those overrides are intentional, and `npm run lint:style-contract` is not expected to pass.
+- **CI:** the starter's own test workflows run only upstream (`github.repository == 'alshedivat/al-folio'`). Workflows pin Ruby by series (`3.3`, `3.2`), because exact patch versions fail on `ubuntu-latest` (26.04).
+- **`gh` CLI:** pass `-R Tuominen04/Tuominen04.github.io`; plain `gh` resolves to the upstream repo.
+- **Facts to keep consistent:** about 3 years of professional experience (never "4+ years"); direction is quality, test automation, observability, security and AI tooling, with IoT/ESP32 as a hobby.
+
 ## Route your change
 
 Find your change on the left; edit only what is on the right.
@@ -41,7 +52,7 @@ Read [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md#failure-modes-that-produce-no
 
 1. **Features fail silently.** A feature renders only when its gem is loaded _and_ its flag is on _and_ the page opts in. Otherwise the Liquid tag emits an empty string — no warning, no error.
 2. **`Gemfile` and `_config.yml` are two lists that must agree.** A plugin in only one of them is inert. Adding or removing a plugin means editing both. Repo dirs use hyphens (`al-folio-core`); gem/plugin ids use underscores (`al_folio_core`).
-3. **This repo's effective baseurl is `/al-folio`.** `_config.yml` already sets it, so a plain `bundle exec jekyll build` is correct — that is what `deploy.yml`, `broken-links-site.yml` and `axe.yml` run. Passing `--baseurl /al-folio` is redundant but harmless; blanking the baseurl out is what renders the site unstyled with broken links. Dev server is at `http://localhost:4000/al-folio/`.
+3. **Upstream's effective baseurl is `/al-folio`; this fork's is empty.** Upstream's `_config.yml` sets it, so a plain `bundle exec jekyll build` is correct — that is what `deploy.yml`, `broken-links-site.yml` and `axe.yml` run. Passing `--baseurl /al-folio` is redundant but harmless; blanking the baseurl out is what renders the site unstyled with broken links. Upstream's dev server is at `http://localhost:4000/al-folio/`; this fork's is at `http://localhost:4000/`.
 
 ## Validated local command set
 
