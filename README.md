@@ -26,7 +26,7 @@ Software developer focused on quality, test automation and observability. About 
 ## Contact
 
 - Email: arttutuominen@protonmail.com
-- LinkedIn: [arttu-tuominen](https://www.linkedin.com/in/arttu-tuominen-86218b224)
+- LinkedIn: [arttu-tuominen](https://www.linkedin.com/in/arttutuominen)
 - GitHub: [Tuominen04](https://github.com/Tuominen04)
 
 ## About this site

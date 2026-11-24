@@ -15,7 +15,7 @@ profile:
     <p>
       <span>
         <i class="fab fa-linkedin" aria-hidden="true"></i>
-        <a href="https://www.linkedin.com/in/arttu-tuominen-86218b224" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/arttutuominen" target="_blank">LinkedIn</a>
       </span>
     </p>
 selected_papers: true # includes a list of papers marked as "selected={true}"
